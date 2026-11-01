@@ -1,0 +1,26 @@
+{
+ "pack": "obito_majime",
+ "kind": "assist",
+ "file": "obito_majime.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "obito_majime": "宇智波·带土 真面目"
+   },
+   "says": {}
+  }
+ },
+ "variants": [
+  {
+   "id": "obito_majime",
+   "comic_type": 1,
+   "faces": {
+    "face": "obito_majime.png",
+    "face_big": "obito_majime_b.png"
+   }
+  }
+ ]
+}

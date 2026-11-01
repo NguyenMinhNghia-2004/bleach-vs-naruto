@@ -1,0 +1,60 @@
+{
+ "pack": "lee",
+ "kind": "fighter",
+ "file": "lee.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "lee": "李·洛克",
+    "lee_tomon": "李·洛克 杜门"
+   },
+   "says": {
+    "lee": [
+     "我就是木叶美丽的苍蓝之兽——李洛克",
+     "现在就是我贯彻我的忍道的时候了！",
+     "我要证明就算不会用体术或幻术也能成为一个了不起的忍者！"
+    ],
+    "lee_tomon": [
+     "我就是木叶美丽的苍蓝之兽——李洛克",
+     "现在就是我贯彻我的忍道的时候了！",
+     "我要证明就算不会用体术或幻术也能成为一个了不起的忍者！"
+    ]
+   }
+  }
+ },
+ "variants": [
+  {
+   "id": "lee",
+   "comic_type": 1,
+   "start_frame": 1,
+   "faces": {
+    "face": "lee.png",
+    "face_big": "lee_b.png",
+    "face_bar": "lee_m.png",
+    "face_win": "lee_w.png"
+   },
+   "bgm": {
+    "url": "naruto.mp3",
+    "rate": 0.7
+   }
+  },
+  {
+   "id": "lee_tomon",
+   "comic_type": 1,
+   "start_frame": 2,
+   "faces": {
+    "face": "lee_tomon.png",
+    "face_big": "lee_tomon_b.png",
+    "face_bar": "lee_tomon_m.png",
+    "face_win": "lee_w.png"
+   },
+   "bgm": {
+    "url": "naruto.mp3",
+    "rate": 0.8
+   }
+  }
+ ]
+}

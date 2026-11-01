@@ -1,0 +1,26 @@
+{
+ "pack": "suigetsu",
+ "kind": "assist",
+ "file": "suigetsu.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "suigetsu": "鬼灯·水月"
+   },
+   "says": {}
+  }
+ },
+ "variants": [
+  {
+   "id": "suigetsu",
+   "comic_type": 1,
+   "faces": {
+    "face": "suigetsu.png",
+    "face_big": "suigetsu_b.png"
+   }
+  }
+ ]
+}

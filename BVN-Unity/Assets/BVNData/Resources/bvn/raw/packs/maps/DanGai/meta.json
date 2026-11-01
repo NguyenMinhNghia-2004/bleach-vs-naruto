@@ -1,0 +1,13 @@
+{
+ "pack": "DanGai",
+ "kind": "map",
+ "id": "DanGai",
+ "language": {
+  "zh-CN": {
+   "name": "断界"
+  }
+ },
+ "file": "DanGai.swf",
+ "img": "DanGai.png",
+ "bgm": "stg_cave.mp3"
+}

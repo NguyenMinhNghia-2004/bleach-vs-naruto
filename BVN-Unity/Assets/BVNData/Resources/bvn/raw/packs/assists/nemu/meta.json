@@ -1,0 +1,26 @@
+{
+ "pack": "nemu",
+ "kind": "assist",
+ "file": "nemu.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "nemu": "涅·音梦"
+   },
+   "says": {}
+  }
+ },
+ "variants": [
+  {
+   "id": "nemu",
+   "comic_type": 0,
+   "faces": {
+    "face": "nemu.png",
+    "face_big": "nemu_b.png"
+   }
+  }
+ ]
+}

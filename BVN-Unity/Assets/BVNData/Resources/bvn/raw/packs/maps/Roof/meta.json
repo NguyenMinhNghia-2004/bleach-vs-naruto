@@ -1,0 +1,13 @@
+{
+ "pack": "Roof",
+ "kind": "map",
+ "id": "Roof",
+ "language": {
+  "zh-CN": {
+   "name": "楼顶"
+  }
+ },
+ "file": "Roof.swf",
+ "img": "Roof.png",
+ "bgm": "stg_wind.mp3"
+}

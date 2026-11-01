@@ -1,0 +1,26 @@
+{
+ "pack": "grimmjow",
+ "kind": "assist",
+ "file": "grimmjow.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "grimmjow": "葛力姆乔·贾卡杰克"
+   },
+   "says": {}
+  }
+ },
+ "variants": [
+  {
+   "id": "grimmjow",
+   "comic_type": 0,
+   "faces": {
+    "face": "grimmjow.png",
+    "face_big": "grimmjow_b.png"
+   }
+  }
+ ]
+}

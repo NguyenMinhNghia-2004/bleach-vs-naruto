@@ -1,0 +1,26 @@
+{
+ "pack": "yoruichi",
+ "kind": "assist",
+ "file": "yoruichi.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "yoruichi": "四枫院·夜一"
+   },
+   "says": {}
+  }
+ },
+ "variants": [
+  {
+   "id": "yoruichi",
+   "comic_type": 0,
+   "faces": {
+    "face": "yoruichi.png",
+    "face_big": "yoruichi_b.png"
+   }
+  }
+ ]
+}

@@ -1,0 +1,25 @@
+{
+ "pack": "random_bleach",
+ "kind": "fighter",
+ "file": null,
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "random_bleach": "random_bleach"
+   },
+   "says": {}
+  }
+ },
+ "variants": [
+  {
+   "id": "random_bleach",
+   "comic_type": 0,
+   "faces": {
+    "face": "random_bleach.png"
+   }
+  }
+ ]
+}

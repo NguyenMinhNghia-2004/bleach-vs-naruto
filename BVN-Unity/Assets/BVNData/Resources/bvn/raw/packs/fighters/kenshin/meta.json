@@ -1,0 +1,58 @@
+{
+ "pack": "kenshin",
+ "kind": "fighter",
+ "file": "kenshin.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "kenshin": "绯村·剑心",
+    "kenshin_battousai": "绯村·剑心 拔刀斋"
+   },
+   "says": {
+    "kenshin": [
+     "剑是凶器，剑技是杀人的伎俩，|无论用多么美丽的语言去掩饰，那始终是事实",
+     "……"
+    ],
+    "kenshin_battousai": [
+     "剑是凶器，剑技是杀人的伎俩，|无论用多么美丽的语言去掩饰，那始终是事实",
+     "……"
+    ]
+   }
+  }
+ },
+ "variants": [
+  {
+   "id": "kenshin",
+   "comic_type": 0,
+   "start_frame": 1,
+   "faces": {
+    "face": "kenshin.png",
+    "face_big": "kenshin_b.png",
+    "face_bar": "kenshin_m.png",
+    "face_win": "kenshin_w.png"
+   },
+   "bgm": {
+    "url": "bleach_boss.mp3",
+    "rate": 0.9
+   }
+  },
+  {
+   "id": "kenshin_battousai",
+   "comic_type": 0,
+   "start_frame": 2,
+   "faces": {
+    "face": "kenshin_battousai.png",
+    "face_big": "kenshin_battousai_b.png",
+    "face_bar": "kenshin_battousai_m.png",
+    "face_win": "kenshin_w.png"
+   },
+   "bgm": {
+    "url": "bleach_boss.mp3",
+    "rate": 0.9
+   }
+  }
+ ]
+}

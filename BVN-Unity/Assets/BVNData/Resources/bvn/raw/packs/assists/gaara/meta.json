@@ -1,0 +1,26 @@
+{
+ "pack": "gaara",
+ "kind": "assist",
+ "file": "gaara.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "gaara": "我爱罗"
+   },
+   "says": {}
+  }
+ },
+ "variants": [
+  {
+   "id": "gaara",
+   "comic_type": 1,
+   "faces": {
+    "face": "gaara.png",
+    "face_big": "gaara_b.png"
+   }
+  }
+ ]
+}

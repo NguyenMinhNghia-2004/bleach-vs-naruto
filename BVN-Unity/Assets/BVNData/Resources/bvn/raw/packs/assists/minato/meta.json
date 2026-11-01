@@ -1,0 +1,26 @@
+{
+ "pack": "minato",
+ "kind": "assist",
+ "file": "minato.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "minato": "波风·水门"
+   },
+   "says": {}
+  }
+ },
+ "variants": [
+  {
+   "id": "minato",
+   "comic_type": 1,
+   "faces": {
+    "face": "minato.png",
+    "face_big": "minato_b.png"
+   }
+  }
+ ]
+}

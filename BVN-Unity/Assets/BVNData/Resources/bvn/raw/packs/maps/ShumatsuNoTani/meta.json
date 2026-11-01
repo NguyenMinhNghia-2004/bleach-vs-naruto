@@ -1,0 +1,13 @@
+{
+ "pack": "ShumatsuNoTani",
+ "kind": "map",
+ "id": "ShumatsuNoTani",
+ "language": {
+  "zh-CN": {
+   "name": "终结之谷"
+  }
+ },
+ "file": "ShumatsuNoTani.swf",
+ "img": "ShumatsuNoTani.png",
+ "bgm": "stg_waterfall.mp3"
+}

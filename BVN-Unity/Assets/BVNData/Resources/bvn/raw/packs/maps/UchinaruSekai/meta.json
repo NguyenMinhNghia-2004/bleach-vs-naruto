@@ -1,0 +1,13 @@
+{
+ "pack": "UchinaruSekai",
+ "kind": "map",
+ "id": "UchinaruSekai",
+ "language": {
+  "zh-CN": {
+   "name": "内心世界"
+  }
+ },
+ "file": "UchinaruSekai.swf",
+ "img": "UchinaruSekai.png",
+ "bgm": "stg_wind.mp3"
+}

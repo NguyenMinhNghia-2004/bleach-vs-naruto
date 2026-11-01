@@ -1,0 +1,13 @@
+{
+ "pack": "Forest",
+ "kind": "map",
+ "id": "Forest",
+ "language": {
+  "zh-CN": {
+   "name": "森林"
+  }
+ },
+ "file": "Forest.swf",
+ "img": "Forest.png",
+ "bgm": "stg_wind.mp3"
+}

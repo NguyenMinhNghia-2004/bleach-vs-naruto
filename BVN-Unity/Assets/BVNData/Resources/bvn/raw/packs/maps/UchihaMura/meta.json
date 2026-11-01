@@ -1,0 +1,13 @@
+{
+ "pack": "UchihaMura",
+ "kind": "map",
+ "id": "UchihaMura",
+ "language": {
+  "zh-CN": {
+   "name": "宇智波村"
+  }
+ },
+ "file": "UchihaMura.swf",
+ "img": "UchihaMura.png",
+ "bgm": "stg_village.mp3"
+}

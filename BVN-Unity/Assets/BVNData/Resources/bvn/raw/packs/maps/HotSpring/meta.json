@@ -1,0 +1,13 @@
+{
+ "pack": "HotSpring",
+ "kind": "map",
+ "id": "HotSpring",
+ "language": {
+  "zh-CN": {
+   "name": "温泉"
+  }
+ },
+ "file": "HotSpring.swf",
+ "img": "HotSpring.png",
+ "bgm": "stg_water.mp3"
+}

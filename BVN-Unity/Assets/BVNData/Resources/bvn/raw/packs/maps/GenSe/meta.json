@@ -1,0 +1,13 @@
+{
+ "pack": "GenSe",
+ "kind": "map",
+ "id": "GenSe",
+ "language": {
+  "zh-CN": {
+   "name": "现世"
+  }
+ },
+ "file": "GenSe.swf",
+ "img": "GenSe.png",
+ "bgm": "stg_city.mp3"
+}

@@ -1,0 +1,26 @@
+{
+ "pack": "ogihci_vasteLord",
+ "kind": "assist",
+ "file": "ogihci_vasteLord.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "ogihci_vasteLord": "黑崎·一护 牛头 "
+   },
+   "says": {}
+  }
+ },
+ "variants": [
+  {
+   "id": "ogihci_vasteLord",
+   "comic_type": 0,
+   "faces": {
+    "face": "ogihci_vasteLord.png",
+    "face_big": "ogihci_vasteLord_b.png"
+   }
+  }
+ ]
+}

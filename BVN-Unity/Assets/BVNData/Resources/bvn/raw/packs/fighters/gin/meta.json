@@ -1,0 +1,39 @@
+{
+ "pack": "gin",
+ "kind": "fighter",
+ "file": "gin.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "gin": "市丸·银"
+   },
+   "says": {
+    "gin": [
+     "我无话可说！",
+     "对不起，蓝染队长。",
+     "真没办法……"
+    ]
+   }
+  }
+ },
+ "variants": [
+  {
+   "id": "gin",
+   "comic_type": 0,
+   "start_frame": 1,
+   "faces": {
+    "face": "gin.png",
+    "face_big": "gin_b.png",
+    "face_bar": "gin_m.png",
+    "face_win": "gin_w.png"
+   },
+   "bgm": {
+    "url": "bleach.mp3",
+    "rate": 0.7
+   }
+  }
+ ]
+}

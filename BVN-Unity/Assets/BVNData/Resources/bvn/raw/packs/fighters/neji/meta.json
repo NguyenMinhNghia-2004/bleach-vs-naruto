@@ -1,0 +1,39 @@
+{
+ "pack": "neji",
+ "kind": "fighter",
+ "file": "neji.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "neji": "日向·宁次"
+   },
+   "says": {
+    "neji": [
+     "我从来都不认为——上忍就是终点！",
+     "人的命运，是从一出生就被注定了。",
+     "命运，从对手是我的那一刻开始便被决定了。"
+    ]
+   }
+  }
+ },
+ "variants": [
+  {
+   "id": "neji",
+   "comic_type": 1,
+   "start_frame": 1,
+   "faces": {
+    "face": "neji.png",
+    "face_big": "neji_b.png",
+    "face_bar": "neji_m.png",
+    "face_win": "neji_w.png"
+   },
+   "bgm": {
+    "url": "naruto.mp3",
+    "rate": 0.7
+   }
+  }
+ ]
+}

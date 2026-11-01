@@ -1,0 +1,26 @@
+{
+ "pack": "hinata",
+ "kind": "assist",
+ "file": "hinata.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "hinata": "日向·雏田"
+   },
+   "says": {}
+  }
+ },
+ "variants": [
+  {
+   "id": "hinata",
+   "comic_type": 1,
+   "faces": {
+    "face": "hinata.png",
+    "face_big": "hinata_b.png"
+   }
+  }
+ ]
+}

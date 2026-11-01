@@ -1,0 +1,39 @@
+{
+ "pack": "kenpachi",
+ "kind": "fighter",
+ "file": "kenpachi.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "kenpachi": "更木·剑八"
+   },
+   "says": {
+    "kenpachi": [
+     "来吧、厮杀吧！",
+     "不畏惧死，为的是玩乐死亡。",
+     "每舍弃自尊一次，我们就越像是野兽。|每扼杀一颗心，我们就远离野兽一步。"
+    ]
+   }
+  }
+ },
+ "variants": [
+  {
+   "id": "kenpachi",
+   "comic_type": 0,
+   "start_frame": 1,
+   "faces": {
+    "face": "kenpachi.png",
+    "face_big": "kenpachi_b.png",
+    "face_bar": "kenpachi_m.png",
+    "face_win": "kenpachi_w.png"
+   },
+   "bgm": {
+    "url": "bleach.mp3",
+    "rate": 0.8
+   }
+  }
+ ]
+}

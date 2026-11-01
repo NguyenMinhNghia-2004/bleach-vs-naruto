@@ -1,0 +1,26 @@
+{
+ "pack": "sai",
+ "kind": "assist",
+ "file": "sai.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "sai": "佐井"
+   },
+   "says": {}
+  }
+ },
+ "variants": [
+  {
+   "id": "sai",
+   "comic_type": 1,
+   "faces": {
+    "face": "sai.png",
+    "face_big": "sai_b.png"
+   }
+  }
+ ]
+}

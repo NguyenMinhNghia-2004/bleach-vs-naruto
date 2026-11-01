@@ -1,0 +1,26 @@
+{
+ "pack": "tsunate",
+ "kind": "assist",
+ "file": "tsunate.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "tsunate": "纲手"
+   },
+   "says": {}
+  }
+ },
+ "variants": [
+  {
+   "id": "tsunate",
+   "comic_type": 1,
+   "faces": {
+    "face": "tsunate.png",
+    "face_big": "tsunate_b.png"
+   }
+  }
+ ]
+}

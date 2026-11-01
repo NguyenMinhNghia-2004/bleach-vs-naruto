@@ -1,0 +1,11 @@
+{
+ "id": "minato",
+ "seconds": 0.6,
+ "symbols": 20,
+ "images": 32,
+ "pages": 1,
+ "scripts": 14,
+ "script_errors": [],
+ "sounds": 3,
+ "warnings": []
+}

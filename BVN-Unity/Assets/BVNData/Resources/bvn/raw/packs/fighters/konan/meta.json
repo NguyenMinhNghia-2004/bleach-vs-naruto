@@ -1,0 +1,37 @@
+{
+ "pack": "konan",
+ "kind": "fighter",
+ "file": "konan.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "konan": "小南"
+   },
+   "says": {
+    "konan": [
+     "……"
+    ]
+   }
+  }
+ },
+ "variants": [
+  {
+   "id": "konan",
+   "comic_type": 1,
+   "start_frame": 1,
+   "faces": {
+    "face": "konan.png",
+    "face_big": "konan_b.png",
+    "face_bar": "konan_m.png",
+    "face_win": "konan_w.png"
+   },
+   "bgm": {
+    "url": "naruto.mp3",
+    "rate": 0.7
+   }
+  }
+ ]
+}

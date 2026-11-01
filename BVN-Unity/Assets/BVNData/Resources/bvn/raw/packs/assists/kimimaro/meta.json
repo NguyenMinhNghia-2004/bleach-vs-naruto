@@ -1,0 +1,26 @@
+{
+ "pack": "kimimaro",
+ "kind": "assist",
+ "file": "kimimaro.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "kimimaro": "君麻吕"
+   },
+   "says": {}
+  }
+ },
+ "variants": [
+  {
+   "id": "kimimaro",
+   "comic_type": 1,
+   "faces": {
+    "face": "kimimaro.png",
+    "face_big": "kimimaro_b.png"
+   }
+  }
+ ]
+}

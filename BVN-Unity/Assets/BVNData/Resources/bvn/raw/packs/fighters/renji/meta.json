@@ -1,0 +1,38 @@
+{
+ "pack": "renji",
+ "kind": "fighter",
+ "file": "renji.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "renji": "阿散井·恋次"
+   },
+   "says": {
+    "renji": [
+     "我曾经发誓，我说过我一定要救她……|并没有向谁，仅仅是向我的——灵魂而发誓！",
+     "在触不到的燎牙上点火，就象不必仰望星星就能解决，|就象不必喊破喉咙就可以一样。"
+    ]
+   }
+  }
+ },
+ "variants": [
+  {
+   "id": "renji",
+   "comic_type": 0,
+   "start_frame": 1,
+   "faces": {
+    "face": "renji.png",
+    "face_big": "renji_b.png",
+    "face_bar": "renji_m.png",
+    "face_win": "renji_w.png"
+   },
+   "bgm": {
+    "url": "bleach.mp3",
+    "rate": 0.7
+   }
+  }
+ ]
+}

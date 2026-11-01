@@ -1,0 +1,11 @@
+{
+ "id": "hiruko",
+ "seconds": 0.3,
+ "symbols": 3,
+ "images": 30,
+ "pages": 1,
+ "scripts": 5,
+ "script_errors": [],
+ "sounds": 2,
+ "warnings": []
+}

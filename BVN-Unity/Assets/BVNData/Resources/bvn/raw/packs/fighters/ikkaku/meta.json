@@ -1,0 +1,39 @@
+{
+ "pack": "ikkaku",
+ "kind": "fighter",
+ "file": "ikkaku.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "ikkaku": "斑目·一角"
+   },
+   "says": {
+    "ikkaku": [
+     "我们每个人，打从出生的那一刻起就要迈向死亡。",
+     "无法超越死亡的人，那就必须去理解某些事。",
+     "结束总是在开始之前就已经存在了。"
+    ]
+   }
+  }
+ },
+ "variants": [
+  {
+   "id": "ikkaku",
+   "comic_type": 0,
+   "start_frame": 1,
+   "faces": {
+    "face": "ikkaku.png",
+    "face_big": "ikkaku_b.png",
+    "face_bar": "ikkaku_m.png",
+    "face_win": "ikkaku_w.png"
+   },
+   "bgm": {
+    "url": "bleach.mp3",
+    "rate": 0.7
+   }
+  }
+ ]
+}

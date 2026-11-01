@@ -1,0 +1,39 @@
+{
+ "pack": "deidara",
+ "kind": "fighter",
+ "file": "deidara.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "deidara": "迪达拉"
+   },
+   "says": {
+    "deidara": [
+     "艺术就是爆炸！嗯。",
+     "我的忍术全都是艺术！嗯。",
+     "艺术是美丽而短暂的，消失那一瞬间 才称为美丽，嗯。"
+    ]
+   }
+  }
+ },
+ "variants": [
+  {
+   "id": "deidara",
+   "comic_type": 1,
+   "start_frame": 1,
+   "faces": {
+    "face": "deidara.png",
+    "face_big": "deidara_b.png",
+    "face_bar": "deidara_m.png",
+    "face_win": "deidara_w.png"
+   },
+   "bgm": {
+    "url": "naruto.mp3",
+    "rate": 0.7
+   }
+  }
+ ]
+}

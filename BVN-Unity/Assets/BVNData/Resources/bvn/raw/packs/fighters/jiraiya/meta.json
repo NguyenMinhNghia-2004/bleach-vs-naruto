@@ -1,0 +1,39 @@
+{
+ "pack": "jiraiya",
+ "kind": "fighter",
+ "file": "jiraiya.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "jiraiya": "自来也"
+   },
+   "says": {
+    "jiraiya": [
+     "不分东南西北，整个天下都是无人能敌的三忍白发童子蛤蟆使者。",
+     "对于忍者而言怎样活着无所谓，怎样死去才是最重要的。",
+     "忍者指的是能忍耐的人"
+    ]
+   }
+  }
+ },
+ "variants": [
+  {
+   "id": "jiraiya",
+   "comic_type": 1,
+   "start_frame": 1,
+   "faces": {
+    "face": "jiraiya.png",
+    "face_big": "jiraiya_b.png",
+    "face_bar": "jiraiya_m.png",
+    "face_win": "jiraiya_w.png"
+   },
+   "bgm": {
+    "url": "naruto.mp3",
+    "rate": 0.7
+   }
+  }
+ ]
+}

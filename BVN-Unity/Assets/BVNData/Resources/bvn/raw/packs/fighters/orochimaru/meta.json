@@ -1,0 +1,39 @@
+{
+ "pack": "orochimaru",
+ "kind": "fighter",
+ "file": "orochimaru.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "orochimaru": "大蛇丸"
+   },
+   "says": {
+    "orochimaru": [
+     "条约只是让对手麻痹的伪装，从现在开始历史将被改写",
+     "有形的东西迟早会毁灭，无形的东西才会永恒！",
+     "肉体的生命太短暂,太无常"
+    ]
+   }
+  }
+ },
+ "variants": [
+  {
+   "id": "orochimaru",
+   "comic_type": 1,
+   "start_frame": 1,
+   "faces": {
+    "face": "orochimaru.png",
+    "face_big": "orochimaru_b.png",
+    "face_bar": "orochimaru_m.png",
+    "face_win": "orochimaru_w.png"
+   },
+   "bgm": {
+    "url": "naruto_boss.mp3",
+    "rate": 0.8
+   }
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+{
+ "pack": "Rukongai",
+ "kind": "map",
+ "id": "Rukongai",
+ "language": {
+  "zh-CN": {
+   "name": "流魂街"
+  }
+ },
+ "file": "Rukongai.swf",
+ "img": "Rukongai.png",
+ "bgm": "stg_village.mp3"
+}

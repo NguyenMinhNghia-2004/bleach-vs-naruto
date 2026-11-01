@@ -1,0 +1,26 @@
+{
+ "pack": "rangiku",
+ "kind": "assist",
+ "file": "rangiku.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "rangiku": "松本·乱菊"
+   },
+   "says": {}
+  }
+ },
+ "variants": [
+  {
+   "id": "rangiku",
+   "comic_type": 0,
+   "faces": {
+    "face": "rangiku.png",
+    "face_big": "rangiku_b.png"
+   }
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "pack": "hiruko",
+ "kind": "assist",
+ "file": "hiruko.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "hiruko": "蝎"
+   },
+   "says": {}
+  }
+ },
+ "variants": [
+  {
+   "id": "hiruko",
+   "comic_type": 1,
+   "faces": {
+    "face": "hiruko.png",
+    "face_big": "hiruko_b.png"
+   }
+  }
+ ]
+}

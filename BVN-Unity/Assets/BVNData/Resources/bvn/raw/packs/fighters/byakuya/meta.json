@@ -1,0 +1,60 @@
+{
+ "pack": "byakuya",
+ "kind": "fighter",
+ "file": "byakuya.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "byakuya": "朽木·白哉",
+    "byakuya_bankai": "朽木·白哉 卍解"
+   },
+   "says": {
+    "byakuya": [
+     "真是迟钝啊。连倒下去都是这样。",
+     "喔……真没想到一介平民也能体会贵族的感受啊。",
+     "像你这种人，死在我的卍解之下，还早了一千年。"
+    ],
+    "byakuya_bankai": [
+     "真是迟钝啊。连倒下去都是这样。",
+     "喔……真没想到一介平民也能体会贵族的感受啊。",
+     "像你这种人，死在我的卍解之下，还早了一千年。"
+    ]
+   }
+  }
+ },
+ "variants": [
+  {
+   "id": "byakuya",
+   "comic_type": 0,
+   "start_frame": 1,
+   "faces": {
+    "face": "byakuya.png",
+    "face_big": "byakuya_b.png",
+    "face_bar": "byakuya_m.png",
+    "face_win": "byakuya_w.png"
+   },
+   "bgm": {
+    "url": "bleach.mp3",
+    "rate": 0.7
+   }
+  },
+  {
+   "id": "byakuya_bankai",
+   "comic_type": 0,
+   "start_frame": 2,
+   "faces": {
+    "face": "byakuya_bankai.png",
+    "face_big": "byakuya_bankai_b.png",
+    "face_bar": "byakuya_bankai_m.png",
+    "face_win": "byakuya_bankai_w.png"
+   },
+   "bgm": {
+    "url": "bleach.mp3",
+    "rate": 0.8
+   }
+  }
+ ]
+}

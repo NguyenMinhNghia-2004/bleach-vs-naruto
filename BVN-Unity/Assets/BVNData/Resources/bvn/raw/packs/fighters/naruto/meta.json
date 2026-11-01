@@ -1,0 +1,123 @@
+{
+ "pack": "naruto",
+ "kind": "fighter",
+ "file": "naruto.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "naruto": "漩涡·鸣人",
+    "naruto_oneTail": "漩涡·鸣人 一尾",
+    "naruto_fourTail": "漩涡·鸣人 四尾",
+    "naruto_sennin": "漩涡·鸣人 仙人",
+    "naruto_kyubi": "漩涡·鸣人 九尾"
+   },
+   "says": {
+    "naruto": [
+     "只要你变成全村人都认可的最棒忍者，|你就可以把火影这个名字抢过来！",
+     "我是绝对不会放弃的，因为这就是我的忍道！",
+     "好！我决定了,我要走一条属于我自己的忍道,|朝着绝对不让自己后悔的道路一直大步的走下去！"
+    ],
+    "naruto_oneTail": [
+     "只要你变成全村人都认可的最棒忍者，|你就可以把火影这个名字抢过来！",
+     "我是绝对不会放弃的，因为这就是我的忍道！",
+     "好！我决定了,我要走一条属于我自己的忍道,|朝着绝对不让自己后悔的道路一直大步的走下去！"
+    ],
+    "naruto_fourTail": [
+     "只要你变成全村人都认可的最棒忍者，|你就可以把火影这个名字抢过来！",
+     "我是绝对不会放弃的，因为这就是我的忍道！",
+     "好！我决定了,我要走一条属于我自己的忍道,|朝着绝对不让自己后悔的道路一直大步的走下去！"
+    ],
+    "naruto_sennin": [
+     "只要你变成全村人都认可的最棒忍者，|你就可以把火影这个名字抢过来！",
+     "我是绝对不会放弃的，因为这就是我的忍道！",
+     "好！我决定了,我要走一条属于我自己的忍道,|朝着绝对不让自己后悔的道路一直大步的走下去！"
+    ],
+    "naruto_kyubi": [
+     "只要你变成全村人都认可的最棒忍者，|你就可以把火影这个名字抢过来！",
+     "我是绝对不会放弃的，因为这就是我的忍道！",
+     "好！我决定了,我要走一条属于我自己的忍道,|朝着绝对不让自己后悔的道路一直大步的走下去！"
+    ]
+   }
+  }
+ },
+ "variants": [
+  {
+   "id": "naruto",
+   "comic_type": 1,
+   "start_frame": 1,
+   "faces": {
+    "face": "naruto.png",
+    "face_big": "naruto_b.png",
+    "face_bar": "naruto_m.png",
+    "face_win": "naruto_w.png"
+   },
+   "bgm": {
+    "url": "char_naruto.mp3",
+    "rate": 0.7
+   }
+  },
+  {
+   "id": "naruto_oneTail",
+   "comic_type": 1,
+   "start_frame": 2,
+   "faces": {
+    "face": "naruto_oneTail.png",
+    "face_big": "naruto_oneTail_b.png",
+    "face_bar": "naruto_oneTail_m.png",
+    "face_win": "naruto_oneTail_w.png"
+   },
+   "bgm": {
+    "url": "char_naruto.mp3",
+    "rate": 0.7
+   }
+  },
+  {
+   "id": "naruto_fourTail",
+   "comic_type": 1,
+   "start_frame": 3,
+   "faces": {
+    "face": "naruto_fourTail.png",
+    "face_big": "naruto_fourTail_b.png",
+    "face_bar": "naruto_fourTail_m.png",
+    "face_win": "naruto_oneTail_w.png"
+   },
+   "bgm": {
+    "url": "naruto_boss.mp3",
+    "rate": 0.7
+   }
+  },
+  {
+   "id": "naruto_sennin",
+   "comic_type": 1,
+   "start_frame": 4,
+   "faces": {
+    "face": "naruto_sennin.png",
+    "face_big": "naruto_sennin_b.png",
+    "face_bar": "naruto_sennin_m.png",
+    "face_win": "naruto_sennin_w.png"
+   },
+   "bgm": {
+    "url": "char_naruto.mp3",
+    "rate": 0.7
+   }
+  },
+  {
+   "id": "naruto_kyubi",
+   "comic_type": 1,
+   "start_frame": 5,
+   "faces": {
+    "face": "naruto_kyubi.png",
+    "face_big": "naruto_kyubi_b.png",
+    "face_bar": "naruto_kyubi_m.png",
+    "face_win": "naruto_sennin_w.png"
+   },
+   "bgm": {
+    "url": "naruto_boss.mp3",
+    "rate": 0.9
+   }
+  }
+ ]
+}

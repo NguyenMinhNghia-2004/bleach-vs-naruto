@@ -1,0 +1,26 @@
+{
+ "pack": "shikamaru",
+ "kind": "assist",
+ "file": "shikamaru.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "shikamaru": "奈良·鹿丸"
+   },
+   "says": {}
+  }
+ },
+ "variants": [
+  {
+   "id": "shikamaru",
+   "comic_type": 1,
+   "faces": {
+    "face": "shikamaru.png",
+    "face_big": "shikamaru_b.png"
+   }
+  }
+ ]
+}

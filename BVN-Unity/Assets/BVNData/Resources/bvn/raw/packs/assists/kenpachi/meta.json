@@ -1,0 +1,26 @@
+{
+ "pack": "kenpachi",
+ "kind": "assist",
+ "file": "kenpachi.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "kenpachi": "更木·剑八"
+   },
+   "says": {}
+  }
+ },
+ "variants": [
+  {
+   "id": "kenpachi",
+   "comic_type": 0,
+   "faces": {
+    "face": "kenpachi.png",
+    "face_big": "kenpachi_b.png"
+   }
+  }
+ ]
+}

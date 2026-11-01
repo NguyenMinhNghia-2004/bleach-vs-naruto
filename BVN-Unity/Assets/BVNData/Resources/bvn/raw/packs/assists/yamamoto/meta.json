@@ -1,0 +1,26 @@
+{
+ "pack": "yamamoto",
+ "kind": "assist",
+ "file": "yamamoto.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "yamamoto": "山本·元柳斎重国"
+   },
+   "says": {}
+  }
+ },
+ "variants": [
+  {
+   "id": "yamamoto",
+   "comic_type": 0,
+   "faces": {
+    "face": "yamamoto.png",
+    "face_big": "yamamoto_b.png"
+   }
+  }
+ ]
+}

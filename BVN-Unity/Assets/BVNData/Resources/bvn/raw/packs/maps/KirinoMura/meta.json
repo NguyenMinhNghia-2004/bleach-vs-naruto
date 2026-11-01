@@ -1,0 +1,13 @@
+{
+ "pack": "KirinoMura",
+ "kind": "map",
+ "id": "KirinoMura",
+ "language": {
+  "zh-CN": {
+   "name": "雾隐村"
+  }
+ },
+ "file": "KirinoMura.swf",
+ "img": "KirinoMura.png",
+ "bgm": "stg_village.mp3"
+}

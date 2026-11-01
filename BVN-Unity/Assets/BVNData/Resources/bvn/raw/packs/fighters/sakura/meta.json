@@ -1,0 +1,38 @@
+{
+ "pack": "sakura",
+ "kind": "fighter",
+ "file": "sakura.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "sakura": "春野·樱"
+   },
+   "says": {
+    "sakura": [
+     "我每次都受到其他人的保护，好不甘心哦……既然如此，这次……必须有我来保护我所珍惜的人们了……",
+     "我每次……都希望自己能够成为一个厉害的忍者……"
+    ]
+   }
+  }
+ },
+ "variants": [
+  {
+   "id": "sakura",
+   "comic_type": 1,
+   "start_frame": 1,
+   "faces": {
+    "face": "sakura.png",
+    "face_big": "sakura_b.png",
+    "face_bar": "sakura_m.png",
+    "face_win": "sakura_w.png"
+   },
+   "bgm": {
+    "url": "naruto.mp3",
+    "rate": 0.7
+   }
+  }
+ ]
+}

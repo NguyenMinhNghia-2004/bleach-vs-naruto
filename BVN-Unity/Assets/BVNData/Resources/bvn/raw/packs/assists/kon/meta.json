@@ -1,0 +1,26 @@
+{
+ "pack": "kon",
+ "kind": "assist",
+ "file": "kon.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "kon": "魂"
+   },
+   "says": {}
+  }
+ },
+ "variants": [
+  {
+   "id": "kon",
+   "comic_type": 0,
+   "faces": {
+    "face": "kon.png",
+    "face_big": "kon_b.png"
+   }
+  }
+ ]
+}

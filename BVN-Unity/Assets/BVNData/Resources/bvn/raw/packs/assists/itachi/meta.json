@@ -1,0 +1,26 @@
+{
+ "pack": "itachi",
+ "kind": "assist",
+ "file": "itachi.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "itachi": "宇智波·鼬"
+   },
+   "says": {}
+  }
+ },
+ "variants": [
+  {
+   "id": "itachi",
+   "comic_type": 1,
+   "faces": {
+    "face": "itachi.png",
+    "face_big": "itachi_b.png"
+   }
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+{
+ "pack": "GoteiJusantai",
+ "kind": "map",
+ "id": "GoteiJusantai",
+ "language": {
+  "zh-CN": {
+   "name": "护廷十三队"
+  }
+ },
+ "file": "GoteiJusantai.swf",
+ "img": "GoteiJusantai.png",
+ "bgm": "stg_village.mp3"
+}

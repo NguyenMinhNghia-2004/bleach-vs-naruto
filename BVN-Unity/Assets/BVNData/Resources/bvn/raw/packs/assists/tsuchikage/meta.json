@@ -1,0 +1,26 @@
+{
+ "pack": "tsuchikage",
+ "kind": "assist",
+ "file": "tsuchikage.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "tsuchikage": "大野木"
+   },
+   "says": {}
+  }
+ },
+ "variants": [
+  {
+   "id": "tsuchikage",
+   "comic_type": 1,
+   "faces": {
+    "face": "tsuchikage.png",
+    "face_big": "tsuchikage_b.png"
+   }
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "pack": "temari",
+ "kind": "assist",
+ "file": "temari.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "temari": "手鞠"
+   },
+   "says": {}
+  }
+ },
+ "variants": [
+  {
+   "id": "temari",
+   "comic_type": 1,
+   "faces": {
+    "face": "temari.png",
+    "face_big": "temari_b.png"
+   }
+  }
+ ]
+}

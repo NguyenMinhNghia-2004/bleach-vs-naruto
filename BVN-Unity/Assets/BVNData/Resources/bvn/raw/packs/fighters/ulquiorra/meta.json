@@ -1,0 +1,60 @@
+{
+ "pack": "ulquiorra",
+ "kind": "fighter",
+ "file": "ulquiorra.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "ulquiorra": "乌尔奇奥拉·西法",
+    "ulquiorra_resurreccion": "乌尔奇奥拉·西法 归刃"
+   },
+   "says": {
+    "ulquiorra": [
+     "太阳已经被我们击落了。",
+     "没有什么是我看不到的。",
+     "人类，真是到最后，也出人意料的生物。"
+    ],
+    "ulquiorra_resurreccion": [
+     "太阳已经被我们击落了。",
+     "没有什么是我看不到的。",
+     "人类，真是到最后，也出人意料的生物。"
+    ]
+   }
+  }
+ },
+ "variants": [
+  {
+   "id": "ulquiorra",
+   "comic_type": 0,
+   "start_frame": 1,
+   "faces": {
+    "face": "ulquiorra.png",
+    "face_big": "ulquiorra_b.png",
+    "face_bar": "ulquiorra_m.png",
+    "face_win": "ulquiorra_w.png"
+   },
+   "bgm": {
+    "url": "bleach_boss.mp3",
+    "rate": 0.9
+   }
+  },
+  {
+   "id": "ulquiorra_resurreccion",
+   "comic_type": 0,
+   "start_frame": 2,
+   "faces": {
+    "face": "ulquiorra_resurreccion.png",
+    "face_big": "ulquiorra_resurreccion_b.png",
+    "face_bar": "ulquiorra_resurreccion_m.png",
+    "face_win": "ulquiorra_w.png"
+   },
+   "bgm": {
+    "url": "bleach_boss.mp3",
+    "rate": 0.9
+   }
+  }
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "pack": "killerbee",
+ "kind": "fighter",
+ "file": "killerbee.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "killerbee": "奇拉比"
+   },
+   "says": {
+    "killerbee": [
+     "你这笨蛋，你这混蛋！",
+     "哟！本大爷是最强的！哟！",
+     "哟！你这笨蛋，你这混蛋！哟！……"
+    ]
+   }
+  }
+ },
+ "variants": [
+  {
+   "id": "killerbee",
+   "comic_type": 1,
+   "start_frame": 1,
+   "faces": {
+    "face": "killerbee.png",
+    "face_big": "killerbee_b.png",
+    "face_bar": "killerbee_m.png",
+    "face_win": "killerbee_w.png"
+   },
+   "bgm": {
+    "url": "naruto.mp3",
+    "rate": 0.7
+   }
+  }
+ ]
+}

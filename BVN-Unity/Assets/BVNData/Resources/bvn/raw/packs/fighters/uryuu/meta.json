@@ -1,0 +1,38 @@
+{
+ "pack": "uryuu",
+ "kind": "fighter",
+ "file": "uryuu.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "uryuu": "石田·雨龙"
+   },
+   "says": {
+    "uryuu": [
+     "我赌上灭却师的骄傲，一定要赢你！",
+     "不堪一击……"
+    ]
+   }
+  }
+ },
+ "variants": [
+  {
+   "id": "uryuu",
+   "comic_type": 0,
+   "start_frame": 1,
+   "faces": {
+    "face": "uryuu.png",
+    "face_big": "uryuu_b.png",
+    "face_bar": "uryuu_m.png",
+    "face_win": "uryuu_w.png"
+   },
+   "bgm": {
+    "url": "bleach.mp3",
+    "rate": 0.7
+   }
+  }
+ ]
+}

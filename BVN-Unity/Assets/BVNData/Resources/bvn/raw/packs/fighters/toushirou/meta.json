@@ -1,0 +1,60 @@
+{
+ "pack": "toushirou",
+ "kind": "fighter",
+ "file": "toushirou.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "toushirou": "日番谷·东狮郎",
+    "toushirou_bankai": "日番谷·东狮郎 卍解"
+   },
+   "says": {
+    "toushirou": [
+     "在强烈的阳光下，印在薄冰之上的足迹消失无踪。 | 不必害怕被欺骗，这世界原本就建立在假象之上。",
+     "不要叫我冬狮郎，是日番谷队长！",
+     "还差得远呢！"
+    ],
+    "toushirou_bankai": [
+     "在强烈的阳光下，印在薄冰之上的足迹消失无踪。 | 不必害怕被欺骗，这世界原本就建立在假象之上。",
+     "不要叫我冬狮郎，是日番谷队长！",
+     "还差得远呢！"
+    ]
+   }
+  }
+ },
+ "variants": [
+  {
+   "id": "toushirou",
+   "comic_type": 0,
+   "start_frame": 1,
+   "faces": {
+    "face": "toushirou.png",
+    "face_big": "toushirou_b.png",
+    "face_bar": "toushirou_m.png",
+    "face_win": "toushirou_w.png"
+   },
+   "bgm": {
+    "url": "bleach.mp3",
+    "rate": 0.7
+   }
+  },
+  {
+   "id": "toushirou_bankai",
+   "comic_type": 0,
+   "start_frame": 2,
+   "faces": {
+    "face": "toushirou_bankai.png",
+    "face_big": "toushirou_bankai_b.png",
+    "face_bar": "toushirou_bankai_m.png",
+    "face_win": "toushirou_bankai_w.png"
+   },
+   "bgm": {
+    "url": "bleach.mp3",
+    "rate": 0.7
+   }
+  }
+ ]
+}

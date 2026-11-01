@@ -1,0 +1,26 @@
+{
+ "pack": "yachiru",
+ "kind": "assist",
+ "file": "yachiru.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "yachiru": "草鹿·八千流"
+   },
+   "says": {}
+  }
+ },
+ "variants": [
+  {
+   "id": "yachiru",
+   "comic_type": 0,
+   "faces": {
+    "face": "yachiru.png",
+    "face_big": "yachiru_b.png"
+   }
+  }
+ ]
+}

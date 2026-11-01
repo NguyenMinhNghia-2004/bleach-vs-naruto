@@ -1,0 +1,39 @@
+{
+ "pack": "grimmjow",
+ "kind": "fighter",
+ "file": "grimmjow.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "grimmjow": "葛力姆乔·贾卡杰克"
+   },
+   "says": {
+    "grimmjow": [
+     "不了解爱，也不了解光……只有破坏才是存在的证明！",
+     "啊哈哈哈哈哈……这下正好，死神，终于有杀你的价值了。",
+     "我不明白，我怎么会输给你这种货色！"
+    ]
+   }
+  }
+ },
+ "variants": [
+  {
+   "id": "grimmjow",
+   "comic_type": 0,
+   "start_frame": 1,
+   "faces": {
+    "face": "grimmjow.png",
+    "face_big": "grimmjow_b.png",
+    "face_bar": "grimmjow_m.png",
+    "face_win": "grimmjow_w.png"
+   },
+   "bgm": {
+    "url": "bleach.mp3",
+    "rate": 0.7
+   }
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "pack": "madara",
+ "kind": "assist",
+ "file": "madara.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "madara": "宇智波·斑"
+   },
+   "says": {}
+  }
+ },
+ "variants": [
+  {
+   "id": "madara",
+   "comic_type": 1,
+   "faces": {
+    "face": "madara.png",
+    "face_big": "madara_b.png"
+   }
+  }
+ ]
+}

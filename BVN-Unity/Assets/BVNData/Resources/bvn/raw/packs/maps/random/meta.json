@@ -1,0 +1,12 @@
+{
+ "pack": "random",
+ "kind": "map",
+ "id": "random",
+ "language": {
+  "zh-CN": {
+   "name": "随机场景"
+  }
+ },
+ "file": "",
+ "img": "random.png"
+}

@@ -1,0 +1,37 @@
+{
+ "pack": "gaara",
+ "kind": "fighter",
+ "file": "gaara.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "gaara": "我爱罗"
+   },
+   "says": {
+    "gaara": [
+     "就只有这样而已吗?"
+    ]
+   }
+  }
+ },
+ "variants": [
+  {
+   "id": "gaara",
+   "comic_type": 1,
+   "start_frame": 1,
+   "faces": {
+    "face": "gaara.png",
+    "face_big": "gaara_b.png",
+    "face_bar": "gaara_m.png",
+    "face_win": "gaara_w.png"
+   },
+   "bgm": {
+    "url": "naruto.mp3",
+    "rate": 0.7
+   }
+  }
+ ]
+}

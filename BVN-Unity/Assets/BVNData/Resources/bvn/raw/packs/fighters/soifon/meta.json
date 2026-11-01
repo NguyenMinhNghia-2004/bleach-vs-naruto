@@ -1,0 +1,38 @@
+{
+ "pack": "soifon",
+ "kind": "fighter",
+ "file": "soifon.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "soifon": "碎蜂"
+   },
+   "says": {
+    "soifon": [
+     "你的影子就像是……毫无目的的毒针一样……将我的去路给缝死。",
+     "你的光芒就像是……轻柔地打在水塔的雷一般……断绝了我的生命之源。"
+    ]
+   }
+  }
+ },
+ "variants": [
+  {
+   "id": "soifon",
+   "comic_type": 0,
+   "start_frame": 1,
+   "faces": {
+    "face": "soifon.png",
+    "face_big": "soifon_b.png",
+    "face_bar": "soifon_m.png",
+    "face_win": "soifon_w.png"
+   },
+   "bgm": {
+    "url": "bleach.mp3",
+    "rate": 0.7
+   }
+  }
+ ]
+}

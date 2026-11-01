@@ -1,0 +1,39 @@
+{
+ "pack": "juggo",
+ "kind": "fighter",
+ "file": "juggo.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "juggo": "天秤·重吾"
+   },
+   "says": {
+    "juggo": [
+     "……",
+     "哈哈哈哈哈哈",
+     "我不会再失控了。"
+    ]
+   }
+  }
+ },
+ "variants": [
+  {
+   "id": "juggo",
+   "comic_type": 1,
+   "start_frame": 1,
+   "faces": {
+    "face": "juggo.png",
+    "face_big": "juggo_b.png",
+    "face_bar": "juggo_m.png",
+    "face_win": "juggo_w.png"
+   },
+   "bgm": {
+    "url": "naruto.mp3",
+    "rate": 0.7
+   }
+  }
+ ]
+}

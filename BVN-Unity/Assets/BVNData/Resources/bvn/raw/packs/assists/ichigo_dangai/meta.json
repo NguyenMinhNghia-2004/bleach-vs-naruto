@@ -1,0 +1,26 @@
+{
+ "pack": "ichigo_dangai",
+ "kind": "assist",
+ "file": "ichigo_dangai.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "ichigo_dangai": "黑崎·一护 修行"
+   },
+   "says": {}
+  }
+ },
+ "variants": [
+  {
+   "id": "ichigo_dangai",
+   "comic_type": 0,
+   "faces": {
+    "face": "ichigo_dangai.png",
+    "face_big": "ichigo_dangai_b.png"
+   }
+  }
+ ]
+}

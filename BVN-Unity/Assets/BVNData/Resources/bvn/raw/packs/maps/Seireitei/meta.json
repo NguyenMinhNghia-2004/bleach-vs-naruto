@@ -1,0 +1,13 @@
+{
+ "pack": "Seireitei",
+ "kind": "map",
+ "id": "Seireitei",
+ "language": {
+  "zh-CN": {
+   "name": "静灵廷"
+  }
+ },
+ "file": "Seireitei.swf",
+ "img": "Seireitei.png",
+ "bgm": "stg_wind.mp3"
+}

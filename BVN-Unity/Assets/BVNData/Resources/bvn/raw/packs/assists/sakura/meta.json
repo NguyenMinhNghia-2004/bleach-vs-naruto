@@ -1,0 +1,26 @@
+{
+ "pack": "sakura",
+ "kind": "assist",
+ "file": "sakura.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "sakura": "春野·樱"
+   },
+   "says": {}
+  }
+ },
+ "variants": [
+  {
+   "id": "sakura",
+   "comic_type": 1,
+   "faces": {
+    "face": "sakura.png",
+    "face_big": "sakura_b.png"
+   }
+  }
+ ]
+}

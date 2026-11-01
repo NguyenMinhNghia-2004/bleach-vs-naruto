@@ -1,0 +1,26 @@
+{
+ "pack": "starrk",
+ "kind": "assist",
+ "file": "starrk.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "starrk": "柯雅泰·史塔克"
+   },
+   "says": {}
+  }
+ },
+ "variants": [
+  {
+   "id": "starrk",
+   "comic_type": 0,
+   "faces": {
+    "face": "starrk.png",
+    "face_big": "starrk_b.png"
+   }
+  }
+ ]
+}

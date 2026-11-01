@@ -1,0 +1,26 @@
+{
+ "pack": "ikkaku",
+ "kind": "assist",
+ "file": "ikkaku.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "ikkaku": "斑目·一角"
+   },
+   "says": {}
+  }
+ },
+ "variants": [
+  {
+   "id": "ikkaku",
+   "comic_type": 0,
+   "faces": {
+    "face": "ikkaku.png",
+    "face_big": "ikkaku_b.png"
+   }
+  }
+ ]
+}

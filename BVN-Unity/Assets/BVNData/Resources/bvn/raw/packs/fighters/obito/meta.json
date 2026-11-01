@@ -1,0 +1,62 @@
+{
+ "pack": "obito",
+ "kind": "fighter",
+ "file": "obito.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "obito": "宇智波·带土",
+    "obito_majime": "宇智波·带土 真面目"
+   },
+   "says": {
+    "obito": [
+     "不重视同伴的人，连废物都不如！",
+     "现实越残酷，内心的空洞就越大。",
+     "这个世界已无所谓的希望，希望和放弃没有任何的区别，|只是一种敷衍的托词罢了。",
+     "我谁也不是，也不想变成谁。。。。"
+    ],
+    "obito_majime": [
+     "不重视同伴的人，连废物都不如！",
+     "现实越残酷，内心的空洞就越大。",
+     "这个世界已无所谓的希望，希望和放弃没有任何的区别，|只是一种敷衍的托词罢了。",
+     "我谁也不是，也不想变成谁。。。。"
+    ]
+   }
+  }
+ },
+ "variants": [
+  {
+   "id": "obito",
+   "comic_type": 1,
+   "start_frame": 1,
+   "faces": {
+    "face": "obito.png",
+    "face_big": "obito_b.png",
+    "face_bar": "obito_m.png",
+    "face_win": "obito_w.png"
+   },
+   "bgm": {
+    "url": "naruto_boss.mp3",
+    "rate": 0.9
+   }
+  },
+  {
+   "id": "obito_majime",
+   "comic_type": 1,
+   "start_frame": 2,
+   "faces": {
+    "face": "obito_majime.png",
+    "face_big": "obito_majime_b.png",
+    "face_bar": "obito_majime_m.png",
+    "face_win": "obito_w.png"
+   },
+   "bgm": {
+    "url": "naruto_boss.mp3",
+    "rate": 0.9
+   }
+  }
+ ]
+}

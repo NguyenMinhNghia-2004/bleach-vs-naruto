@@ -1,0 +1,41 @@
+{
+ "pack": "aizen",
+ "kind": "fighter",
+ "file": "aizen.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "aizen": "蓝染·惣右介"
+   },
+   "says": {
+    "aizen": [
+     "这个世界在最初并没有真实,也没有谎言,只有俨然存在的事实,|可是,存在于这个世界的所有事物,|只会将对自己有利的事实误认为真实而活。",
+     "与实力并不相称的生命力也是一种浪费啊！",
+     "不能批判死者……",
+     "像你这样的水准,我不准你再次对我刀刃相向！",
+     "我们之所以觉得岩壁上的花很美，|那是因为我们就站在岩壁上的缘故，|不必害怕，因为我们像花那样，脚步并没有向外踩出去。"
+    ]
+   }
+  }
+ },
+ "variants": [
+  {
+   "id": "aizen",
+   "comic_type": 0,
+   "start_frame": 1,
+   "faces": {
+    "face": "aizen.png",
+    "face_big": "aizen_b.png",
+    "face_bar": "aizen_m.png",
+    "face_win": "aizen_w.png"
+   },
+   "bgm": {
+    "url": "bleach_boss.mp3",
+    "rate": 0.9
+   }
+  }
+ ]
+}

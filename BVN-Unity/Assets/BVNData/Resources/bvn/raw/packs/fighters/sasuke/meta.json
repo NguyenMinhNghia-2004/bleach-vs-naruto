@@ -1,0 +1,81 @@
+{
+ "pack": "sasuke",
+ "kind": "fighter",
+ "file": "sasuke.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "sasuke": "宇智波·佐助",
+    "sasuke_juin": "宇智波·佐助 咒怨",
+    "sasuke_susanoo": "宇智波·佐助 须佐能乎"
+   },
+   "says": {
+    "sasuke": [
+     "羁绊太多，只会迷失自我。",
+     "孤独，不是被父母责备后难过的那种程度比得上的。",
+     "我是个复仇者，我是为复仇而生的，为了复仇我可以放弃一切。"
+    ],
+    "sasuke_juin": [
+     "羁绊太多，只会迷失自我。",
+     "孤独，不是被父母责备后难过的那种程度比得上的。",
+     "我是个复仇者，我是为复仇而生的，为了复仇我可以放弃一切。"
+    ],
+    "sasuke_susanoo": [
+     "羁绊太多，只会迷失自我。",
+     "孤独，不是被父母责备后难过的那种程度比得上的。",
+     "我是个复仇者，我是为复仇而生的，为了复仇我可以放弃一切。"
+    ]
+   }
+  }
+ },
+ "variants": [
+  {
+   "id": "sasuke",
+   "comic_type": 1,
+   "start_frame": 1,
+   "faces": {
+    "face": "sasuke.png",
+    "face_big": "sasuke_b.png",
+    "face_bar": "sasuke_m.png",
+    "face_win": "sasuke_w.png"
+   },
+   "bgm": {
+    "url": "char_sasuke.mp3",
+    "rate": 0.8
+   }
+  },
+  {
+   "id": "sasuke_juin",
+   "comic_type": 1,
+   "start_frame": 2,
+   "faces": {
+    "face": "sasuke_juin.png",
+    "face_big": "sasuke_juin_b.png",
+    "face_bar": "sasuke_juin_m.png",
+    "face_win": "sasuke_juin_w.png"
+   },
+   "bgm": {
+    "url": "char_sasuke.mp3",
+    "rate": 0.9
+   }
+  },
+  {
+   "id": "sasuke_susanoo",
+   "comic_type": 1,
+   "start_frame": 3,
+   "faces": {
+    "face": "sasuke_susanoo.png",
+    "face_big": "sasuke_susanoo_b.png",
+    "face_bar": "sasuke_susanoo_m.png",
+    "face_win": "sasuke_susanoo_w.png"
+   },
+   "bgm": {
+    "url": "char_sasuke.mp3",
+    "rate": 0.9
+   }
+  }
+ ]
+}

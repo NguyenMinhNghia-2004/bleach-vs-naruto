@@ -1,0 +1,26 @@
+{
+ "pack": "shishio",
+ "kind": "assist",
+ "file": "shishio.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "shishio": "志志雄·真实"
+   },
+   "says": {}
+  }
+ },
+ "variants": [
+  {
+   "id": "shishio",
+   "comic_type": 0,
+   "faces": {
+    "face": "shishio.png",
+    "face_big": "shishio_b.png"
+   }
+  }
+ ]
+}

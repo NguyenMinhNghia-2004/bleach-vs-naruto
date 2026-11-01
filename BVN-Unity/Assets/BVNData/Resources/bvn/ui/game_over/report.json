@@ -1,0 +1,11 @@
+{
+ "id": "game_over",
+ "seconds": 0.6,
+ "symbols": 17,
+ "images": 16,
+ "pages": 1,
+ "scripts": 1,
+ "script_errors": [],
+ "sounds": 2,
+ "warnings": []
+}

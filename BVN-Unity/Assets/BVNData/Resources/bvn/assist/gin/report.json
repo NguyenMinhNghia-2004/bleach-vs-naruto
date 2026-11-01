@@ -1,0 +1,11 @@
+{
+ "id": "gin",
+ "seconds": 0.2,
+ "symbols": 5,
+ "images": 16,
+ "pages": 1,
+ "scripts": 5,
+ "script_errors": [],
+ "sounds": 2,
+ "warnings": []
+}

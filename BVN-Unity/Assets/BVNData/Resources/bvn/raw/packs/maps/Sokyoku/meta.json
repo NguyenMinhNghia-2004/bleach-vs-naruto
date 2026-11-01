@@ -1,0 +1,13 @@
+{
+ "pack": "Sokyoku",
+ "kind": "map",
+ "id": "Sokyoku",
+ "language": {
+  "zh-CN": {
+   "name": "双极之丘"
+  }
+ },
+ "file": "Sokyoku.swf",
+ "img": "Sokyoku.png",
+ "bgm": "stg_wind.mp3"
+}

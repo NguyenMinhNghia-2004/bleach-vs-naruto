@@ -1,0 +1,11 @@
+{
+ "id": "bird1",
+ "seconds": 0.1,
+ "symbols": 8,
+ "images": 14,
+ "pages": 1,
+ "scripts": 7,
+ "script_errors": [],
+ "sounds": 1,
+ "warnings": []
+}

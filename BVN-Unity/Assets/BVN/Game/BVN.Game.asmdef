@@ -1,0 +1,14 @@
+{
+    "name": "BVN.Game",
+    "rootNamespace": "BVN.Game",
+    "references": ["BVN.Runtime"],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

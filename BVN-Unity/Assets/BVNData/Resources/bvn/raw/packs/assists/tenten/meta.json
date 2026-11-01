@@ -1,0 +1,26 @@
+{
+ "pack": "tenten",
+ "kind": "assist",
+ "file": "tenten.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "tenten": "天天"
+   },
+   "says": {}
+  }
+ },
+ "variants": [
+  {
+   "id": "tenten",
+   "comic_type": 1,
+   "faces": {
+    "face": "tenten.png",
+    "face_big": "tenten_b.png"
+   }
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "pack": "uryuu",
+ "kind": "assist",
+ "file": "uryuu.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "uryuu": "石田·雨龙"
+   },
+   "says": {}
+  }
+ },
+ "variants": [
+  {
+   "id": "uryuu",
+   "comic_type": 0,
+   "faces": {
+    "face": "uryuu.png",
+    "face_big": "uryuu_b.png"
+   }
+  }
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "pack": "chad",
+ "kind": "fighter",
+ "file": "chad.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "chad": "茶渡·泰虎"
+   },
+   "says": {
+    "chad": [
+     "如果手上没有剑，我就不能保护你。",
+     "如果我一直握着剑，我就无法抱紧你。",
+     "……"
+    ]
+   }
+  }
+ },
+ "variants": [
+  {
+   "id": "chad",
+   "comic_type": 0,
+   "start_frame": 1,
+   "faces": {
+    "face": "chad.png",
+    "face_big": "chad_b.png",
+    "face_bar": "chad_m.png",
+    "face_win": "chad_w.png"
+   },
+   "bgm": {
+    "url": "bleach.mp3",
+    "rate": 0.7
+   }
+  }
+ ]
+}

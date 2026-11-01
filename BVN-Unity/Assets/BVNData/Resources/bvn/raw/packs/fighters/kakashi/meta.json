@@ -1,0 +1,60 @@
+{
+ "pack": "kakashi",
+ "kind": "fighter",
+ "file": "kakashi.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "kakashi": "旗木·卡卡西",
+    "kakashi_kamui": "旗木·卡卡西 神威"
+   },
+   "says": {
+    "kakashi": [
+     "忍者是不能按常理来思考的！",
+     "放心吧，就算死我也会保护你们的，我绝对不让我的同伴被杀。",
+     "以现在的你是赢不了我的，你根本不明白什么是真正的强大！"
+    ],
+    "kakashi_kamui": [
+     "忍者是不能按常理来思考的！",
+     "放心吧，就算死我也会保护你们的，我绝对不让我的同伴被杀。",
+     "以现在的你是赢不了我的，你根本不明白什么是真正的强大！"
+    ]
+   }
+  }
+ },
+ "variants": [
+  {
+   "id": "kakashi",
+   "comic_type": 1,
+   "start_frame": 1,
+   "faces": {
+    "face": "kakashi.png",
+    "face_big": "kakashi_b.png",
+    "face_bar": "kakashi_m.png",
+    "face_win": "kakashi_w.png"
+   },
+   "bgm": {
+    "url": "naruto.mp3",
+    "rate": 0.7
+   }
+  },
+  {
+   "id": "kakashi_kamui",
+   "comic_type": 1,
+   "start_frame": 2,
+   "faces": {
+    "face": "kakashi_kamui.png",
+    "face_big": "kakashi_kamui_b.png",
+    "face_bar": "kakashi_kamui_m.png",
+    "face_win": "kakashi_kamui_w.png"
+   },
+   "bgm": {
+    "url": "naruto.mp3",
+    "rate": 0.8
+   }
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "pack": "jiraiya",
+ "kind": "assist",
+ "file": "jiraiya.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "jiraiya": "自来也"
+   },
+   "says": {}
+  }
+ },
+ "variants": [
+  {
+   "id": "jiraiya",
+   "comic_type": 1,
+   "faces": {
+    "face": "jiraiya.png",
+    "face_big": "jiraiya_b.png"
+   }
+  }
+ ]
+}

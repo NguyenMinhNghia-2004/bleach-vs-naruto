@@ -1,0 +1,58 @@
+{
+ "pack": "rukia",
+ "kind": "fighter",
+ "file": "rukia.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "rukia": "朽木·露琪亚",
+    "rukia_shikai": "朽木·露琪亚 始解"
+   },
+   "says": {
+    "rukia": [
+     "命运是轮回的吗?还是伸向前方的? | 假如,是轮回的话,那就应该把那轮回之环击碎吗?  | 还是应该逆来顺受呢?",
+     "人们之所以能怀抱希望，是因为他们看不见死亡。"
+    ],
+    "rukia_shikai": [
+     "命运是轮回的吗?还是伸向前方的? | 假如,是轮回的话,那就应该把那轮回之环击碎吗?  | 还是应该逆来顺受呢?",
+     "人们之所以能怀抱希望，是因为他们看不见死亡。"
+    ]
+   }
+  }
+ },
+ "variants": [
+  {
+   "id": "rukia",
+   "comic_type": 0,
+   "start_frame": 1,
+   "faces": {
+    "face": "rukia.png",
+    "face_big": "rukia_b.png",
+    "face_bar": "rukia_m.png",
+    "face_win": "rukia_w.png"
+   },
+   "bgm": {
+    "url": "bleach.mp3",
+    "rate": 0.7
+   }
+  },
+  {
+   "id": "rukia_shikai",
+   "comic_type": 0,
+   "start_frame": 2,
+   "faces": {
+    "face": "rukia_shikai.png",
+    "face_big": "rukia_shikai_b.png",
+    "face_bar": "rukia_shikai_m.png",
+    "face_win": "rukia_shikai_w.png"
+   },
+   "bgm": {
+    "url": "bleach.mp3",
+    "rate": 0.7
+   }
+  }
+ ]
+}

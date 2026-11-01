@@ -1,0 +1,165 @@
+{
+ "pack": "ichigo",
+ "kind": "fighter",
+ "file": "ichigo.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "ichigo": "黑崎·一护",
+    "ichigo_bankai": "黑崎·一护 卍解",
+    "ichigo_vizored_half": "黑崎·一护 半虚",
+    "ichigo_vizored": "黑崎·一护 虚化",
+    "ichigo_zero": "黑崎·一护 零段",
+    "ogihci": "黑崎·一护 内虚",
+    "ogihci_bankai": "黑崎·一护 内虚 卍解"
+   },
+   "says": {
+    "ichigo": [
+     "光是战斗根本没有意思 只是活下去也没有意义。",
+     "我也不知道为什么，总之很爽就是了！",
+     "正因为我们看不见，那才可怕。"
+    ],
+    "ichigo_bankai": [
+     "光是战斗根本没有意思 只是活下去也没有意义。",
+     "我也不知道为什么，总之很爽就是了！",
+     "正因为我们看不见，那才可怕。"
+    ],
+    "ichigo_vizored_half": [
+     "一护，王与坐骑的区别是什么？|不要告诉我是两只脚和四只脚的区别！",
+     "答案只有一个，那就是本能！|被刻印在事物最原始的根本上，透彻无比的杀戮本能！",
+     "你缺少的就是这个，这种露骨的本能！|所以你才比我弱啊，一护！"
+    ],
+    "ichigo_vizored": [
+     "光是战斗根本没有意思 只是活下去也没有意义。",
+     "我也不知道为什么，总之很爽就是了！",
+     "正因为我们看不见，那才可怕。"
+    ],
+    "ichigo_zero": [
+     "光是战斗根本没有意思 只是活下去也没有意义。",
+     "我也不知道为什么，总之很爽就是了！",
+     "正因为我们看不见，那才可怕。"
+    ],
+    "ogihci": [
+     "一护，王与坐骑的区别是什么？|不要告诉我是两只脚和四只脚的区别！",
+     "答案只有一个，那就是本能！|被刻印在事物最原始的根本上，透彻无比的杀戮本能！",
+     "你缺少的就是这个，这种露骨的本能！|所以你才比我弱啊，一护！"
+    ],
+    "ogihci_bankai": [
+     "一护，王与坐骑的区别是什么？|不要告诉我是两只脚和四只脚的区别！",
+     "答案只有一个，那就是本能！|被刻印在事物最原始的根本上，透彻无比的杀戮本能！",
+     "你缺少的就是这个，这种露骨的本能！|所以你才比我弱啊，一护！"
+    ]
+   }
+  }
+ },
+ "variants": [
+  {
+   "id": "ichigo",
+   "comic_type": 0,
+   "start_frame": 1,
+   "faces": {
+    "face": "ichigo.png",
+    "face_big": "ichigo_b.png",
+    "face_bar": "ichigo_m.png",
+    "face_win": "ichigo_w.png"
+   },
+   "bgm": {
+    "url": "char_ichigo.mp3",
+    "rate": 0.7
+   }
+  },
+  {
+   "id": "ichigo_bankai",
+   "comic_type": 0,
+   "start_frame": 2,
+   "faces": {
+    "face": "ichigo_bankai.png",
+    "face_big": "ichigo_bankai_b.png",
+    "face_bar": "ichigo_bankai_m.png",
+    "face_win": "ichigo_bankai_w.png"
+   },
+   "bgm": {
+    "url": "char_ichigo.mp3",
+    "rate": 0.7
+   }
+  },
+  {
+   "id": "ichigo_vizored_half",
+   "comic_type": 0,
+   "start_frame": 3,
+   "faces": {
+    "face": "ichigo_vizored_half.png",
+    "face_big": "ichigo_vizored_half_b.png",
+    "face_bar": "ichigo_vizored_half_m.png",
+    "face_win": "ichigo_vizored_half_w.png"
+   },
+   "bgm": {
+    "url": "char_ichigo.mp3",
+    "rate": 0.7
+   }
+  },
+  {
+   "id": "ichigo_vizored",
+   "comic_type": 0,
+   "start_frame": 4,
+   "faces": {
+    "face": "ichigo_vizored.png",
+    "face_big": "ichigo_vizored_b.png",
+    "face_bar": "ichigo_vizored_m.png",
+    "face_win": "ichigo_vizored_half_w.png"
+   },
+   "bgm": {
+    "url": "bleach_boss.mp3",
+    "rate": 0.7
+   }
+  },
+  {
+   "id": "ichigo_zero",
+   "comic_type": 0,
+   "start_frame": 5,
+   "faces": {
+    "face": "ichigo_zero.png",
+    "face_big": "ichigo_zero_b.png",
+    "face_bar": "ichigo_zero_m.png",
+    "face_win": "ichigo_w.png"
+   },
+   "bgm": {
+    "url": "char_ichigo.mp3",
+    "rate": 0.7
+   }
+  },
+  {
+   "id": "ogihci",
+   "comic_type": 0,
+   "start_frame": 6,
+   "faces": {
+    "face": "ogihci.png",
+    "face_big": "ogihci_b.png",
+    "face_bar": "ogihci_m.png",
+    "face_win": "ogihci_w.png"
+   },
+   "bgm": {
+    "url": "char_ichigo.mp3",
+    "rate": 0.7
+   }
+  },
+  {
+   "id": "ogihci_bankai",
+   "comic_type": 0,
+   "start_frame": 7,
+   "faces": {
+    "face": "ogihci_bankai.png",
+    "face_big": "ogihci_bankai_b.png",
+    "face_bar": "ogihci_bankai_m.png",
+    "face_win": "ogihci_w.png"
+   },
+   "bgm": {
+    "url": "bleach_boss.mp3",
+    "rate": 0.7
+   }
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "pack": "soifon",
+ "kind": "assist",
+ "file": "soifon.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "soifon": "碎蜂"
+   },
+   "says": {}
+  }
+ },
+ "variants": [
+  {
+   "id": "soifon",
+   "comic_type": 0,
+   "faces": {
+    "face": "soifon.png",
+    "face_big": "soifon_b.png"
+   }
+  }
+ ]
+}

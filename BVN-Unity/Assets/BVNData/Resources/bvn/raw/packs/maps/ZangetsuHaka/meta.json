@@ -1,0 +1,13 @@
+{
+ "pack": "ZangetsuHaka",
+ "kind": "map",
+ "id": "ZangetsuHaka",
+ "language": {
+  "zh-CN": {
+   "name": "斩魂刀冢"
+  }
+ },
+ "file": "ZangetsuHaka.swf",
+ "img": "ZangetsuHaka.png",
+ "bgm": "stg_wind.mp3"
+}

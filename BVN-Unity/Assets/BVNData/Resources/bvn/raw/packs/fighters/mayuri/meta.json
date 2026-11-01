@@ -1,0 +1,39 @@
+{
+ "pack": "mayuri",
+ "kind": "fighter",
+ "file": "mayuri.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "mayuri": "涅·茧利"
+   },
+   "says": {
+    "mayuri": [
+     "我已经对你没兴趣了，闪一边去。",
+     "哎呀哎呀，浪费了我这么多时间。",
+     "药物每天8次，机器实验就每天5次吧，|而改造我也会尽量避免把你搞死。"
+    ]
+   }
+  }
+ },
+ "variants": [
+  {
+   "id": "mayuri",
+   "comic_type": 0,
+   "start_frame": 1,
+   "faces": {
+    "face": "mayuri.png",
+    "face_big": "mayuri_b.png",
+    "face_bar": "mayuri_m.png",
+    "face_win": "mayuri_w.png"
+   },
+   "bgm": {
+    "url": "bleach.mp3",
+    "rate": 0.7
+   }
+  }
+ ]
+}

@@ -1,0 +1,11 @@
+{
+ "id": "ninja2",
+ "seconds": 0.2,
+ "symbols": 10,
+ "images": 20,
+ "pages": 1,
+ "scripts": 8,
+ "script_errors": [],
+ "sounds": 1,
+ "warnings": []
+}

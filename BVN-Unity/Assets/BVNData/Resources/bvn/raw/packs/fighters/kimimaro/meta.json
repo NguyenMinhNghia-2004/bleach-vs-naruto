@@ -1,0 +1,39 @@
+{
+ "pack": "kimimaro",
+ "kind": "fighter",
+ "file": "kimimaro.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "kimimaro": "君麻吕"
+   },
+   "says": {
+    "kimimaro": [
+     "好吧，想怎么个死法",
+     "人是为了某种目的而降生的，我坚信，活着便有重要的使命。",
+     "也许的确是这样…我的身体病魔缠身，不能坚持很久…但是，我不会灭亡…而且我不是一个人…作为担当起大蛇丸大人一部分野心的人…我将在大蛇丸大人的心中永存…"
+    ]
+   }
+  }
+ },
+ "variants": [
+  {
+   "id": "kimimaro",
+   "comic_type": 1,
+   "start_frame": 1,
+   "faces": {
+    "face": "kimimaro.png",
+    "face_big": "kimimaro_b.png",
+    "face_bar": "kimimaro_m.png",
+    "face_win": "kimimaro_w.png"
+   },
+   "bgm": {
+    "url": "naruto.mp3",
+    "rate": 0.7
+   }
+  }
+ ]
+}

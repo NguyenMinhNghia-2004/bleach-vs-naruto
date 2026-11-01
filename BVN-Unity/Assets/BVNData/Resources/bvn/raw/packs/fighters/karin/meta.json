@@ -1,0 +1,39 @@
+{
+ "pack": "karin",
+ "kind": "fighter",
+ "file": "karin.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "karin": "漩涡·香磷"
+   },
+   "says": {
+    "karin": [
+     "佐助，人家想和佐助两个人……",
+     "真想再看一次他那时的面庞",
+     "佐助，你在哪里？等等我……"
+    ]
+   }
+  }
+ },
+ "variants": [
+  {
+   "id": "karin",
+   "comic_type": 1,
+   "start_frame": 1,
+   "faces": {
+    "face": "karin.png",
+    "face_big": "karin_b.png",
+    "face_bar": "karin_m.png",
+    "face_win": "karin_w.png"
+   },
+   "bgm": {
+    "url": "naruto.mp3",
+    "rate": 0.5
+   }
+  }
+ ]
+}

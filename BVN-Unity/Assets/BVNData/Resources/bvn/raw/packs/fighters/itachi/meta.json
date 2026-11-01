@@ -1,0 +1,39 @@
+{
+ "pack": "itachi",
+ "kind": "fighter",
+ "file": "itachi.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "itachi": "宇智波·鼬"
+   },
+   "says": {
+    "itachi": [
+     "优秀也是有烦恼的……",
+     "人类就是这样，自以为自己知道了什么，就否定了自己不知道的东西，只会局限在自己的知识范围内自以为是……",
+     "只要是人，都是依靠自己的知识与认知并且也被之束缚生活着的，|那就叫做现实。|但是，知识与认知是暧昧不清的东西，现实也许只是镜花水月。"
+    ]
+   }
+  }
+ },
+ "variants": [
+  {
+   "id": "itachi",
+   "comic_type": 1,
+   "start_frame": 1,
+   "faces": {
+    "face": "itachi.png",
+    "face_big": "itachi_b.png",
+    "face_bar": "itachi_m.png",
+    "face_win": "itachi_w.png"
+   },
+   "bgm": {
+    "url": "naruto_boss.mp3",
+    "rate": 0.9
+   }
+  }
+ ]
+}

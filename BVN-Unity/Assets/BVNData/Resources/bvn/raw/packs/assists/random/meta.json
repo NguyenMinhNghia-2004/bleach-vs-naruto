@@ -1,0 +1,25 @@
+{
+ "pack": "random",
+ "kind": "assist",
+ "file": null,
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "random": "random"
+   },
+   "says": {}
+  }
+ },
+ "variants": [
+  {
+   "id": "random",
+   "comic_type": -1,
+   "faces": {
+    "face": "random.png"
+   }
+  }
+ ]
+}

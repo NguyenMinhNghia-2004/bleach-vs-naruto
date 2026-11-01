@@ -1,0 +1,13 @@
+{
+ "pack": "KonohaMura",
+ "kind": "map",
+ "id": "KonohaMura",
+ "language": {
+  "zh-CN": {
+   "name": "木叶村"
+  }
+ },
+ "file": "KonohaMura.swf",
+ "img": "KonohaMura.png",
+ "bgm": "stg_village.mp3"
+}

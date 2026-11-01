@@ -1,0 +1,42 @@
+{
+ "pack": "madara",
+ "kind": "fighter",
+ "file": "madara.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "madara": "宇智波·斑"
+   },
+   "says": {
+    "madara": [
+     "现在的我没有力量，换句话说，现在的我只是一具躯壳罢了。",
+     "世间的一切与我融为一体，我将成为一统所有的完全体。",
+     "神话是仿效事实被传承的。",
+     "一切攻击对我宇智波斑是没用的。",
+     "好吧，第四次忍界大战，我在此向你们宣战！",
+     "要控制别人，就要学会利用其内心黑暗的技巧。"
+    ]
+   }
+  }
+ },
+ "variants": [
+  {
+   "id": "madara",
+   "comic_type": 1,
+   "start_frame": 1,
+   "faces": {
+    "face": "madara.png",
+    "face_big": "madara_b.png",
+    "face_bar": "madara_m.png",
+    "face_win": "madara_w.png"
+   },
+   "bgm": {
+    "url": "naruto_boss.mp3",
+    "rate": 0.9
+   }
+  }
+ ]
+}

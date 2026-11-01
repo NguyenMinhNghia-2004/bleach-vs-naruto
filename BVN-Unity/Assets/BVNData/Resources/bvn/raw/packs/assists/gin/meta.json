@@ -1,0 +1,26 @@
+{
+ "pack": "gin",
+ "kind": "assist",
+ "file": "gin.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "gin": "市丸·银"
+   },
+   "says": {}
+  }
+ },
+ "variants": [
+  {
+   "id": "gin",
+   "comic_type": 0,
+   "faces": {
+    "face": "gin.png",
+    "face_big": "gin_b.png"
+   }
+  }
+ ]
+}

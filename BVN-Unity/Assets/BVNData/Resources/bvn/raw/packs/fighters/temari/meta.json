@@ -1,0 +1,38 @@
+{
+ "pack": "temari",
+ "kind": "fighter",
+ "file": "temari.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "temari": "手鞠"
+   },
+   "says": {
+    "temari": [
+     "笨蛋！",
+     "哼！不堪一击！"
+    ]
+   }
+  }
+ },
+ "variants": [
+  {
+   "id": "temari",
+   "comic_type": 1,
+   "start_frame": 1,
+   "faces": {
+    "face": "temari.png",
+    "face_big": "temari_b.png",
+    "face_bar": "temari_m.png",
+    "face_win": "temari_w.png"
+   },
+   "bgm": {
+    "url": "naruto.mp3",
+    "rate": 0.7
+   }
+  }
+ ]
+}

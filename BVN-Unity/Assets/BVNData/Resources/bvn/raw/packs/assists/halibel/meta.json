@@ -1,0 +1,26 @@
+{
+ "pack": "halibel",
+ "kind": "assist",
+ "file": "halibel.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "halibel": "蒂雅·赫丽贝尔"
+   },
+   "says": {}
+  }
+ },
+ "variants": [
+  {
+   "id": "halibel",
+   "comic_type": 0,
+   "faces": {
+    "face": "halibel.png",
+    "face_big": "halibel_b.png"
+   }
+  }
+ ]
+}

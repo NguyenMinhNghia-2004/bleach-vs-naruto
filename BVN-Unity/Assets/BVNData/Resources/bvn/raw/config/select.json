@@ -1,0 +1,744 @@
+{
+ "stage_setting": {
+  "layout": {
+   "x": 0.0,
+   "y": 0.0,
+   "width": 800.0,
+   "height": 600.0,
+   "left": 15.0,
+   "right": 15.0,
+   "top": 100.0,
+   "bottom": 10.0
+  }
+ },
+ "char_list": [
+  {
+   "item": [
+    {
+     "id": "ichigo"
+    },
+    {
+     "id": "rukia",
+     "offset": [
+      -10.0,
+      0.0
+     ]
+    },
+    {
+     "id": "renji",
+     "offset": [
+      -20.0,
+      0.0
+     ]
+    },
+    {
+     "id": "ichigo_bankai",
+     "offset": [
+      -5.0,
+      20.0
+     ],
+     "more_fighter": [
+      "ichigo_vizored"
+     ]
+    },
+    {
+     "id": "rukia_shikai",
+     "offset": [
+      -15.0,
+      20.0
+     ]
+    },
+    {
+     "id": "sasuke_juin",
+     "offset": [
+      15.0,
+      20.0
+     ]
+    },
+    {
+     "id": "naruto_oneTail",
+     "offset": [
+      5.0,
+      20.0
+     ],
+     "more_fighter": [
+      "naruto_fourTail"
+     ]
+    },
+    {
+     "id": "sasuke",
+     "offset": [
+      20.0,
+      0.0
+     ]
+    },
+    {
+     "id": "sakura",
+     "offset": [
+      10.0,
+      0.0
+     ]
+    },
+    {
+     "id": "naruto"
+    }
+   ]
+  },
+  {
+   "item": [
+    {
+     "id": "kenpachi"
+    },
+    {
+     "id": "ikkaku",
+     "offset": [
+      -10.0,
+      0.0
+     ]
+    },
+    {
+     "id": "gin",
+     "offset": [
+      -20.0,
+      0.0
+     ]
+    },
+    {
+     "id": "chad",
+     "offset": [
+      -5.0,
+      20.0
+     ]
+    },
+    {
+     "id": "uryuu",
+     "offset": [
+      -15.0,
+      20.0
+     ]
+    },
+    {
+     "id": "deidara",
+     "offset": [
+      15.0,
+      20.0
+     ]
+    },
+    {
+     "id": "itachi",
+     "offset": [
+      5.0,
+      20.0
+     ]
+    },
+    {
+     "id": "juggo",
+     "offset": [
+      20.0,
+      0.0
+     ]
+    },
+    {
+     "id": "karin",
+     "offset": [
+      10.0,
+      0.0
+     ]
+    },
+    {
+     "id": "sasuke_susanoo"
+    }
+   ]
+  },
+  {
+   "item": [
+    {
+     "id": "toushirou"
+    },
+    {
+     "id": "byakuya",
+     "offset": [
+      -10.0,
+      0.0
+     ]
+    },
+    {
+     "id": "mayuri",
+     "offset": [
+      -20.0,
+      0.0
+     ]
+    },
+    {
+     "id": "toushirou_bankai",
+     "offset": [
+      -5.0,
+      20.0
+     ]
+    },
+    {
+     "id": "byakuya_bankai",
+     "offset": [
+      -15.0,
+      20.0
+     ]
+    },
+    {
+     "id": "temari",
+     "offset": [
+      15.0,
+      20.0
+     ]
+    },
+    {
+     "id": "gaara",
+     "offset": [
+      5.0,
+      20.0
+     ]
+    },
+    {
+     "id": "neji",
+     "offset": [
+      20.0,
+      0.0
+     ]
+    },
+    {
+     "id": "lee",
+     "offset": [
+      10.0,
+      0.0
+     ],
+     "more_fighter": [
+      "lee_tomon"
+     ]
+    },
+    {
+     "id": "kakashi"
+    }
+   ]
+  },
+  {
+   "item": [
+    {
+     "id": "ichigo_zero"
+    },
+    {
+     "id": "orihime",
+     "offset": [
+      -10.0,
+      0.0
+     ]
+    },
+    {
+     "id": "soifon",
+     "offset": [
+      -20.0,
+      0.0
+     ]
+    },
+    {
+     "id": "ogihci",
+     "offset": [
+      -5.0,
+      20.0
+     ],
+     "more_fighter": [
+      "ogihci_bankai"
+     ]
+    },
+    {
+     "id": "ichigo_vizored_half",
+     "offset": [
+      -15.0,
+      20.0
+     ]
+    },
+    {
+     "id": "konan",
+     "offset": [
+      15.0,
+      20.0
+     ]
+    },
+    {
+     "id": "pain",
+     "offset": [
+      5.0,
+      20.0
+     ]
+    },
+    {
+     "id": "kimimaro",
+     "offset": [
+      20.0,
+      0.0
+     ]
+    },
+    {
+     "id": "orochimaru",
+     "offset": [
+      10.0,
+      0.0
+     ]
+    },
+    {
+     "id": "jiraiya"
+    }
+   ]
+  },
+  {
+   "item": [
+    {
+     "id": "grimmjow"
+    },
+    {
+     "id": "ulquiorra",
+     "offset": [
+      -10.0,
+      0.0
+     ],
+     "more_fighter": [
+      "ulquiorra_resurreccion"
+     ]
+    },
+    {
+     "id": "starrk",
+     "offset": [
+      -20.0,
+      0.0
+     ]
+    },
+    {
+     "offset": [
+      -5.0,
+      20.0
+     ]
+    },
+    {
+     "offset": [
+      -15.0,
+      20.0
+     ]
+    },
+    {
+     "offset": [
+      15.0,
+      20.0
+     ]
+    },
+    {
+     "offset": [
+      5.0,
+      20.0
+     ]
+    },
+    {
+     "id": "kakashi_kamui",
+     "offset": [
+      20.0,
+      0.0
+     ]
+    },
+    {
+     "id": "killerbee",
+     "offset": [
+      10.0,
+      0.0
+     ]
+    },
+    {
+     "id": "naruto_sennin",
+     "more_fighter": [
+      "naruto_kyubi"
+     ]
+    }
+   ]
+  },
+  {
+   "item": [
+    {},
+    {},
+    {},
+    {
+     "id": "aizen",
+     "offset": [
+      10.0,
+      0.0
+     ]
+    },
+    {
+     "id": "kenshin",
+     "more_fighter": [
+      "kenshin_battousai"
+     ]
+    },
+    {
+     "id": "madara",
+     "offset": [
+      -10.0,
+      0.0
+     ]
+    },
+    {
+     "id": "obito",
+     "offset": [
+      -20.0,
+      0.0
+     ],
+     "more_fighter": [
+      "obito_majime"
+     ]
+    },
+    {},
+    {},
+    {}
+   ]
+  },
+  {
+   "item": [
+    {},
+    {},
+    {},
+    {
+     "id": "random_bleach",
+     "offset": [
+      10.0,
+      0.0
+     ]
+    },
+    {
+     "id": "random"
+    },
+    {
+     "id": "random_naruto",
+     "offset": [
+      -10.0,
+      0.0
+     ]
+    },
+    {},
+    {},
+    {},
+    {}
+   ]
+  }
+ ],
+ "assist_list": [
+  {
+   "item": [
+    {
+     "id": "kon"
+    },
+    {
+     "id": "orihime",
+     "offset": [
+      -10.0,
+      0.0
+     ]
+    },
+    {
+     "id": "yoruichi",
+     "offset": [
+      -20.0,
+      0.0
+     ]
+    },
+    {
+     "id": "uryuu",
+     "offset": [
+      -5.0,
+      20.0
+     ]
+    },
+    {
+     "id": "kenpachi",
+     "offset": [
+      -15.0,
+      20.0
+     ]
+    },
+    {
+     "id": "itachi",
+     "offset": [
+      15.0,
+      20.0
+     ]
+    },
+    {
+     "id": "tenten",
+     "offset": [
+      5.0,
+      20.0
+     ]
+    },
+    {
+     "id": "ino",
+     "offset": [
+      20.0,
+      0.0
+     ]
+    },
+    {
+     "id": "temari",
+     "offset": [
+      10.0,
+      0.0
+     ]
+    },
+    {
+     "id": "gaara"
+    }
+   ]
+  },
+  {
+   "item": [
+    {
+     "id": "ogihci_vasteLord"
+    },
+    {
+     "id": "yachiru",
+     "offset": [
+      -10.0,
+      0.0
+     ]
+    },
+    {
+     "id": "starrk",
+     "offset": [
+      -20.0,
+      0.0
+     ]
+    },
+    {
+     "id": "halibel",
+     "offset": [
+      -5.0,
+      20.0
+     ]
+    },
+    {
+     "id": "grimmjow",
+     "offset": [
+      -15.0,
+      20.0
+     ]
+    },
+    {
+     "id": "jiraiya",
+     "offset": [
+      15.0,
+      20.0
+     ]
+    },
+    {
+     "id": "minato",
+     "offset": [
+      5.0,
+      20.0
+     ]
+    },
+    {
+     "id": "tsuchikage",
+     "offset": [
+      20.0,
+      0.0
+     ]
+    },
+    {
+     "id": "tsunate",
+     "offset": [
+      10.0,
+      0.0
+     ]
+    },
+    {
+     "id": "hinata"
+    }
+   ]
+  },
+  {
+   "item": [
+    {
+     "id": "soifon"
+    },
+    {
+     "id": "nemu",
+     "offset": [
+      -10.0,
+      0.0
+     ]
+    },
+    {
+     "id": "ichigo_dangai",
+     "offset": [
+      -20.0,
+      0.0
+     ]
+    },
+    {
+     "id": "gin",
+     "offset": [
+      -5.0,
+      20.0
+     ]
+    },
+    {
+     "id": "rangiku",
+     "offset": [
+      -15.0,
+      20.0
+     ]
+    },
+    {
+     "id": "obito_majime",
+     "offset": [
+      15.0,
+      20.0
+     ]
+    },
+    {
+     "id": "shikamaru",
+     "offset": [
+      5.0,
+      20.0
+     ]
+    },
+    {
+     "id": "kimimaro",
+     "offset": [
+      20.0,
+      0.0
+     ]
+    },
+    {
+     "id": "sai",
+     "offset": [
+      10.0,
+      0.0
+     ]
+    },
+    {
+     "id": "suigetsu"
+    }
+   ]
+  },
+  {
+   "item": [
+    {
+     "id": "byakuya"
+    },
+    {
+     "id": "ikkaku",
+     "offset": [
+      -10.0,
+      0.0
+     ]
+    },
+    {
+     "offset": [
+      -20.0,
+      0.0
+     ]
+    },
+    {
+     "offset": [
+      -5.0,
+      20.0
+     ]
+    },
+    {
+     "offset": [
+      -15.0,
+      20.0
+     ]
+    },
+    {
+     "offset": [
+      15.0,
+      20.0
+     ]
+    },
+    {
+     "offset": [
+      5.0,
+      20.0
+     ]
+    },
+    {
+     "offset": [
+      20.0,
+      0.0
+     ]
+    },
+    {
+     "id": "hiruko",
+     "offset": [
+      10.0,
+      0.0
+     ]
+    },
+    {
+     "id": "sakura"
+    }
+   ]
+  },
+  {
+   "item": [
+    {},
+    {},
+    {},
+    {
+     "id": "yamamoto",
+     "offset": [
+      10.0,
+      0.0
+     ]
+    },
+    {
+     "id": "shishio"
+    },
+    {
+     "id": "madara",
+     "offset": [
+      -10.0,
+      0.0
+     ]
+    },
+    {},
+    {},
+    {},
+    {}
+   ]
+  },
+  {
+   "item": [
+    {},
+    {},
+    {},
+    {
+     "id": "random_bleach",
+     "offset": [
+      10.0,
+      0.0
+     ]
+    },
+    {
+     "id": "random"
+    },
+    {
+     "id": "random_naruto",
+     "offset": [
+      -10.0,
+      0.0
+     ]
+    },
+    {},
+    {},
+    {},
+    {}
+   ]
+  }
+ ]
+}

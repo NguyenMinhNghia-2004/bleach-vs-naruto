@@ -1,0 +1,18 @@
+{
+ "missing_faces": [],
+ "missing_swf": [
+  "fighter:random",
+  "fighter:random_bleach",
+  "fighter:random_naruto",
+  "assist:random",
+  "assist:random_bleach",
+  "assist:random_naruto"
+ ],
+ "swf_ok": [],
+ "counts": {
+  "fighter_packs": 41,
+  "fighter_variants": 61,
+  "assist_packs": 40,
+  "maps": 16
+ }
+}

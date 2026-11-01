@@ -1,0 +1,38 @@
+{
+ "pack": "orihime",
+ "kind": "fighter",
+ "file": "orihime.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "orihime": "井上·织姬"
+   },
+   "says": {
+    "orihime": [
+     "如果我是那雨滴的话……|那么，我能够像把不曾交会的天空与大地连接起来那样……|把某人的心串联起来吗？",
+     "要是人生有五次就好了。|这样的话我五次都要住在不同的城镇，|五次都要做不同的工作……然后五次都要……喜欢上同一个人。"
+    ]
+   }
+  }
+ },
+ "variants": [
+  {
+   "id": "orihime",
+   "comic_type": 0,
+   "start_frame": 1,
+   "faces": {
+    "face": "orihime.png",
+    "face_big": "orihime_b.png",
+    "face_bar": "orihime_m.png",
+    "face_win": "orihime_w.png"
+   },
+   "bgm": {
+    "url": "bleach.mp3",
+    "rate": 0.7
+   }
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "pack": "orihime",
+ "kind": "assist",
+ "file": "orihime.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "orihime": "井上·织姬"
+   },
+   "says": {}
+  }
+ },
+ "variants": [
+  {
+   "id": "orihime",
+   "comic_type": 0,
+   "faces": {
+    "face": "orihime.png",
+    "face_big": "orihime_b.png"
+   }
+  }
+ ]
+}

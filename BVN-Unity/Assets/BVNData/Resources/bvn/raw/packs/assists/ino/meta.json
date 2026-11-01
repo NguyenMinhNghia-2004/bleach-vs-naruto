@@ -1,0 +1,26 @@
+{
+ "pack": "ino",
+ "kind": "assist",
+ "file": "ino.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "ino": "山中·井野"
+   },
+   "says": {}
+  }
+ },
+ "variants": [
+  {
+   "id": "ino",
+   "comic_type": 1,
+   "faces": {
+    "face": "ino.png",
+    "face_big": "ino_b.png"
+   }
+  }
+ ]
+}

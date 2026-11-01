@@ -1,0 +1,37 @@
+{
+ "pack": "pain",
+ "kind": "fighter",
+ "file": "pain.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "pain": "佩恩"
+   },
+   "says": {
+    "pain": [
+     "……"
+    ]
+   }
+  }
+ },
+ "variants": [
+  {
+   "id": "pain",
+   "comic_type": 1,
+   "start_frame": 1,
+   "faces": {
+    "face": "pain.png",
+    "face_big": "pain_b.png",
+    "face_bar": "pain_m.png",
+    "face_win": "pain_w.png"
+   },
+   "bgm": {
+    "url": "naruto_boss.mp3",
+    "rate": 0.7
+   }
+  }
+ ]
+}

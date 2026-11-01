@@ -1,0 +1,26 @@
+{
+ "pack": "byakuya",
+ "kind": "assist",
+ "file": "byakuya.swf",
+ "path": {
+  "face": "face/"
+ },
+ "language": {
+  "zh-CN": {
+   "name": {
+    "byakuya": "朽木·白哉"
+   },
+   "says": {}
+  }
+ },
+ "variants": [
+  {
+   "id": "byakuya",
+   "comic_type": 0,
+   "faces": {
+    "face": "byakuya.png",
+    "face_big": "byakuya_b.png"
+   }
+  }
+ ]
+}

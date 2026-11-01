@@ -1,0 +1,11 @@
+{
+ "id": "temari",
+ "seconds": 0.3,
+ "symbols": 8,
+ "images": 55,
+ "pages": 1,
+ "scripts": 6,
+ "script_errors": [],
+ "sounds": 4,
+ "warnings": []
+}

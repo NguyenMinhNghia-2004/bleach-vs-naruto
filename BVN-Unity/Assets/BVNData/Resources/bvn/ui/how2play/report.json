@@ -1,0 +1,16 @@
+{
+ "id": "how2play",
+ "seconds": 2.7,
+ "symbols": 50,
+ "images": 212,
+ "pages": 1,
+ "scripts": 4,
+ "script_errors": [
+  {
+   "error": "expected ')' got 'or' at 427",
+   "src": "bdfyxg = function () {\n\t_root.loop++;\n\tif (_parent.bdzl == 1) {\n\t\tduplicateMovieClip(_root.game.xgfykan, \"xgfykan\"+_root.loop, _root.loop);\n\t\t_root.game[\"xgfykan\"+_root.loop]._x = _parent._parent._x+random(5);\n\t\t_root.game[\"xgfykan\"+_root.loop]._xscale = _parent._parent._xscale;\n\t\t_root.game[\"xgfyka"
+  }
+ ],
+ "sounds": 15,
+ "warnings": []
+}
