@@ -7,73 +7,53 @@ using static BVN.Game.Globals;
 
 namespace BVN.Game
 {
+    /// <summary>
+    /// Online lobby: create / join a room by 6-character code, then pick fighter → assist → map step by step
+    /// (OnlineSelectPanel) with the opponent's choices visible live. All texts come from the language packs.
+    /// </summary>
     public class OnlineLobbyStage : Sprite, IStage
     {
-        private static readonly string[] AvailableFighters = new[]
-        {
-            "naruto", "ichigo", "sasuke", "kakashi", "sakura", "byakuya", "gaara", "itachi", "lee", "renji"
-        };
-
-        private static readonly string[] AvailableAssists = new[]
-        {
-            "rukia", "kakashi", "sakura", "kon", "hinata", "itachi", "byakuya", "gaara"
-        };
-
-        private static readonly string[] AvailableMaps = new[]
-        {
-            "Forest", "KonohaMura", "Roof", "ShumatsuNoTani", "UchihaMura", "HotSpring", "KirinoMura"
-        };
-
         private readonly Sprite _ui = new Sprite();
         private TextField _titleTxt;
         private TextField _serverTxt;
         private TextField _statusTxt;
 
         private Sprite _menuPanel;
-        private Sprite _btnHost;
-        private Sprite _btnJoin;
-        private Sprite _btnBack;
-
         private Sprite _keypadPanel;
         private TextField _inputCodeTxt;
         private string _inputBuffer = "";
 
-        private Sprite _roomPanel;
-        private TextField _roomCodeTxt;
-        private TextField _p1TitleTxt;
-        private TextField _p1FighterTxt;
-        private TextField _p1AssistTxt;
-        private TextField _p2TitleTxt;
-        private TextField _p2FighterTxt;
-        private TextField _p2AssistTxt;
-        private TextField _mapTxt;
-        private Sprite _btnStartBattle;
-        private Sprite _btnLeaveRoom;
-
-        private int _localFighterIdx;
-        private int _localAssistIdx;
-        private int _mapIdx;
+        private OnlineSelectPanel _select;
         private BVNRelayServer _localServer;
 
         public DisplayObject display => _ui;
 
+        static string L(string key, object p = null) => p == null ? GetLangText(key) : GetLang(key, p);
+
         public void build()
         {
-            var bg = new Box(GameConfig.GAME_SIZE.x, GameConfig.GAME_SIZE.y, 0x111622);
-            _ui.addChild(bg);
+            _ui.addChild(new Box(GameConfig.GAME_SIZE.x, GameConfig.GAME_SIZE.y, 0x0B0F1A));
+            for (int i = 0; i < 600; i += 6)
+            {
+                var stripe = new Box(800, 2, 0x16213A, 0.35);
+                stripe.y = i;
+                _ui.addChild(stripe);
+            }
 
-            _titleTxt = CreateText("ONLINE MULTIPLAYER (ROOM CODE)", 24, 0x00D2FF, 150, 25, 700, 35);
+            _titleTxt = CreateText(L("txt.online.title"), 30, 0xFFCC00, 0, 40, 800, 40, true);
             _ui.addChild(_titleTxt);
 
-            _serverTxt = CreateText($"MAY CHU: {OnlineRoomSession.Instance.ServerHost}", 13, 0x8899A6, 150, 60, 700, 20);
+            _serverTxt = CreateText(L("txt.online.server", new ASObject { ["host"] = OnlineRoomSession.Instance.ServerHost }), 13, 0x8899A6, 0, 88, 800, 20);
             _ui.addChild(_serverTxt);
 
-            _statusTxt = CreateText("Chon 'TAO PHONG' de lay ma hoac 'VAO PHONG' de nhap ma", 15, 0xCCCCCC, 100, 85, 800, 25);
+            _statusTxt = CreateText(L("txt.online.menu_hint"), 15, 0xCCD6E4, 0, 112, 800, 25);
             _ui.addChild(_statusTxt);
 
             BuildMenuPanel();
             BuildKeypadPanel();
-            BuildRoomPanel();
+
+            _select = new OnlineSelectPanel { visible = false, OnLeave = OnClickLeaveRoom };
+            _ui.addChild(_select);
 
             OnlineRoomSession.Instance.OnRoomCreated += HandleRoomCreated;
             OnlineRoomSession.Instance.OnRoomJoined += HandleRoomJoined;
@@ -92,236 +72,64 @@ namespace BVN.Game
 
         private void BuildMenuPanel()
         {
-            _menuPanel = new Sprite();
-            _menuPanel.x = 260;
-            _menuPanel.y = 160;
-
-            _btnHost = CreateButton("TAO PHONG (HOST)", 0, 0, 280, 50, 0x007ACC, OnClickHost);
-            _menuPanel.addChild(_btnHost);
-
-            _btnJoin = CreateButton("VAO PHONG (JOIN)", 0, 70, 280, 50, 0x28A745, OnClickJoin);
-            _menuPanel.addChild(_btnJoin);
-
-            _btnBack = CreateButton("QUAY LAI (MENU)", 0, 140, 280, 45, 0x6C757D, OnClickBack);
-            _menuPanel.addChild(_btnBack);
-
+            _menuPanel = new Sprite { x = 260, y = 160 };
+            _menuPanel.addChild(CreateButton(L("txt.online.host"), 0, 0, 280, 50, 0x007ACC, OnClickHost));
+            _menuPanel.addChild(CreateButton(L("txt.online.join"), 0, 70, 280, 50, 0x28A745, OnClickJoin));
+            _menuPanel.addChild(CreateButton(L("txt.online.back"), 0, 140, 280, 45, 0x6C757D, OnClickBack));
             _ui.addChild(_menuPanel);
         }
 
         private void BuildKeypadPanel()
         {
-            _keypadPanel = new Sprite();
-            _keypadPanel.x = 210;
-            _keypadPanel.y = 130;
-            _keypadPanel.visible = false;
+            _keypadPanel = new Sprite { x = 210, y = 130, visible = false };
+            _keypadPanel.addChild(new Box(380, 320, 0x1A202C, 0.98));
+            _keypadPanel.addChild(CreateText(L("txt.online.enter_code"), 15, 0xFFFFFF, 20, 12, 340, 22));
 
-            var panelBg = new Box(380, 320, 0x1A202C, 0.98);
-            _keypadPanel.addChild(panelBg);
-
-            var prompt = CreateText("NHAP MA PHONG (6 KY TU):", 15, 0xFFFFFF, 20, 12, 340, 22);
-            _keypadPanel.addChild(prompt);
-
-            _inputCodeTxt = CreateText("______", 26, 0x00FFCC, 20, 38, 340, 35);
+            _inputCodeTxt = CreateText("______", 26, 0x00FFCC, 20, 38, 340, 35, true);
             _keypadPanel.addChild(_inputCodeTxt);
 
-            string[] keys = new[]
+            string[] keys =
             {
-                "1","2","3","4","5","6","7","8","9","0",
-                "A","B","C","D","E","F","G","H","J","K",
-                "L","M","N","P","Q","R","S","T","U","V",
-                "W","X","Y","Z","DEL"
+                "1", "2", "3", "4", "5", "6", "7", "8", "9", "0",
+                "A", "B", "C", "D", "E", "F", "G", "H", "J", "K",
+                "L", "M", "N", "P", "Q", "R", "S", "T", "U", "V",
+                "W", "X", "Y", "Z", "DEL"
             };
-
-            int startX = 20;
-            int startY = 80;
-            int btnW = 32;
-            int btnH = 28;
-            int gap = 3;
-
+            const int startX = 20, startY = 80, btnW = 32, btnH = 28, gap = 3;
             for (int i = 0; i < keys.Length; i++)
             {
                 string k = keys[i];
-                int col = i % 10;
-                int row = i / 10;
-                double bx = startX + col * (btnW + gap);
-                double by = startY + row * (btnH + gap);
+                double bx = startX + (i % 10) * (btnW + gap);
+                double by = startY + (i / 10) * (btnH + gap);
                 double curW = k == "DEL" ? btnW * 2 + gap : btnW;
-
-                var btn = CreateButton(k, bx, by, curW, btnH, k == "DEL" ? 0x884444 : 0x2D3748, () =>
+                _keypadPanel.addChild(CreateButton(k, bx, by, curW, btnH, k == "DEL" ? 0x884444 : 0x2D3748, () =>
                 {
                     if (k == "DEL")
                     {
-                        if (_inputBuffer.Length > 0)
-                        {
-                            _inputBuffer = _inputBuffer.Substring(0, _inputBuffer.Length - 1);
-                            UpdateInputDisplay();
-                        }
+                        if (_inputBuffer.Length > 0) _inputBuffer = _inputBuffer.Substring(0, _inputBuffer.Length - 1);
                     }
-                    else
+                    else if (_inputBuffer.Length < 6)
                     {
-                        if (_inputBuffer.Length < 6)
-                        {
-                            _inputBuffer += k;
-                            UpdateInputDisplay();
-                        }
+                        _inputBuffer += k;
                     }
-                });
-                _keypadPanel.addChild(btn);
-                if (k == "DEL") break;
+                    UpdateInputDisplay();
+                }));
             }
 
-            var btnSubmit = CreateButton("KET NOI", 40, 255, 140, 42, 0x28A745, OnSubmitCode);
-            _keypadPanel.addChild(btnSubmit);
-
-            var btnCancel = CreateButton("HUY", 200, 255, 140, 42, 0xDC3545, () =>
+            _keypadPanel.addChild(CreateButton(L("txt.online.connect"), 40, 255, 140, 42, 0x28A745, OnSubmitCode));
+            _keypadPanel.addChild(CreateButton(L("txt.online.cancel"), 200, 255, 140, 42, 0xDC3545, () =>
             {
                 _keypadPanel.visible = false;
                 _menuPanel.visible = true;
-            });
-            _keypadPanel.addChild(btnCancel);
-
+            }));
             _ui.addChild(_keypadPanel);
-        }
-
-        private void BuildRoomPanel()
-        {
-            _roomPanel = new Sprite();
-            _roomPanel.x = 40;
-            _roomPanel.y = 115;
-            _roomPanel.visible = false;
-
-            var panelBg = new Box(720, 350, 0x1A202C, 0.95);
-            _roomPanel.addChild(panelBg);
-
-            _roomCodeTxt = CreateText("MA PHONG: ______", 28, 0xFFCC00, 110, 10, 500, 38);
-            _roomPanel.addChild(_roomCodeTxt);
-
-            var boxP1 = new Box(320, 140, 0x242D3D);
-            boxP1.x = 30;
-            boxP1.y = 55;
-            _roomPanel.addChild(boxP1);
-
-            _p1TitleTxt = CreateText("NGUOI CHOI 1 (HOST)", 14, 0x00D2FF, 40, 60, 300, 22);
-            _roomPanel.addChild(_p1TitleTxt);
-
-            _p1FighterTxt = CreateText("Tuong: naruto", 14, 0xFFFFFF, 80, 95, 180, 25);
-            _roomPanel.addChild(_p1FighterTxt);
-            var btnP1FPrev = CreateButton("<", 45, 95, 30, 25, 0x4A5568, () => ChangeFighter(1, -1));
-            var btnP1FNext = CreateButton(">", 265, 95, 30, 25, 0x4A5568, () => ChangeFighter(1, 1));
-            _roomPanel.addChild(btnP1FPrev);
-            _roomPanel.addChild(btnP1FNext);
-
-            _p1AssistTxt = CreateText("Tro thu: sakura", 14, 0xFFFFFF, 80, 135, 180, 25);
-            _roomPanel.addChild(_p1AssistTxt);
-            var btnP1APrev = CreateButton("<", 45, 135, 30, 25, 0x4A5568, () => ChangeAssist(1, -1));
-            var btnP1ANext = CreateButton(">", 265, 135, 30, 25, 0x4A5568, () => ChangeAssist(1, 1));
-            _roomPanel.addChild(btnP1APrev);
-            _roomPanel.addChild(btnP1ANext);
-
-            var boxP2 = new Box(320, 140, 0x242D3D);
-            boxP2.x = 370;
-            boxP2.y = 55;
-            _roomPanel.addChild(boxP2);
-
-            _p2TitleTxt = CreateText("NGUOI CHOI 2 (KHACH)", 14, 0x28A745, 380, 60, 300, 22);
-            _roomPanel.addChild(_p2TitleTxt);
-
-            _p2FighterTxt = CreateText("Tuong: ichigo", 14, 0xFFFFFF, 420, 95, 180, 25);
-            _roomPanel.addChild(_p2FighterTxt);
-            var btnP2FPrev = CreateButton("<", 385, 95, 30, 25, 0x4A5568, () => ChangeFighter(2, -1));
-            var btnP2FNext = CreateButton(">", 605, 95, 30, 25, 0x4A5568, () => ChangeFighter(2, 1));
-            _roomPanel.addChild(btnP2FPrev);
-            _roomPanel.addChild(btnP2FNext);
-
-            _p2AssistTxt = CreateText("Tro thu: rukia", 14, 0xFFFFFF, 420, 135, 180, 25);
-            _roomPanel.addChild(_p2AssistTxt);
-            var btnP2APrev = CreateButton("<", 385, 135, 30, 25, 0x4A5568, () => ChangeAssist(2, -1));
-            var btnP2ANext = CreateButton(">", 605, 135, 30, 25, 0x4A5568, () => ChangeAssist(2, 1));
-            _roomPanel.addChild(btnP2APrev);
-            _roomPanel.addChild(btnP2ANext);
-
-            var mapBox = new Box(660, 45, 0x242D3D);
-            mapBox.x = 30;
-            mapBox.y = 205;
-            _roomPanel.addChild(mapBox);
-
-            _mapTxt = CreateText("BAN DO: Forest", 15, 0xFFCC00, 150, 215, 420, 25);
-            _roomPanel.addChild(_mapTxt);
-            var btnMapPrev = CreateButton("<", 100, 215, 40, 25, 0x4A5568, () => ChangeMap(-1));
-            var btnMapNext = CreateButton(">", 580, 215, 40, 25, 0x4A5568, () => ChangeMap(1));
-            _roomPanel.addChild(btnMapPrev);
-            _roomPanel.addChild(btnMapNext);
-
-            _btnStartBattle = CreateButton("BAT DAU TRAN DAU", 220, 265, 280, 45, 0xE0A800, OnClickStart);
-            _btnStartBattle.visible = false;
-            _roomPanel.addChild(_btnStartBattle);
-
-            _btnLeaveRoom = CreateButton("ROI PHONG", 260, 315, 200, 30, 0x6C757D, OnClickLeaveRoom);
-            _roomPanel.addChild(_btnLeaveRoom);
-
-            _ui.addChild(_roomPanel);
-        }
-
-        private void ChangeFighter(int playerSlot, int step)
-        {
-            bool isMe = (playerSlot == 1 && OnlineRoomSession.Instance.IsHost) || (playerSlot == 2 && !OnlineRoomSession.Instance.IsHost);
-            if (!isMe) return;
-
-            _localFighterIdx = (_localFighterIdx + step + AvailableFighters.Length) % AvailableFighters.Length;
-            string fighter = AvailableFighters[_localFighterIdx];
-            string assist = AvailableAssists[_localAssistIdx];
-
-            OnlineRoomSession.Instance.SendSelectSync(fighter, assist);
-            UpdateRosterDisplay();
-        }
-
-        private void ChangeAssist(int playerSlot, int step)
-        {
-            bool isMe = (playerSlot == 1 && OnlineRoomSession.Instance.IsHost) || (playerSlot == 2 && !OnlineRoomSession.Instance.IsHost);
-            if (!isMe) return;
-
-            _localAssistIdx = (_localAssistIdx + step + AvailableAssists.Length) % AvailableAssists.Length;
-            string fighter = AvailableFighters[_localFighterIdx];
-            string assist = AvailableAssists[_localAssistIdx];
-
-            OnlineRoomSession.Instance.SendSelectSync(fighter, assist);
-            UpdateRosterDisplay();
-        }
-
-        private void ChangeMap(int step)
-        {
-            if (!OnlineRoomSession.Instance.IsHost) return;
-
-            _mapIdx = (_mapIdx + step + AvailableMaps.Length) % AvailableMaps.Length;
-            OnlineRoomSession.Instance.SelectedMapId = AvailableMaps[_mapIdx];
-            _mapTxt.text = $"BẢN ĐỒ: {OnlineRoomSession.Instance.SelectedMapId}";
-        }
-
-        private void UpdateRosterDisplay()
-        {
-            if (OnlineRoomSession.Instance.IsHost)
-            {
-                _p1FighterTxt.text = $"Tướng: {OnlineRoomSession.Instance.LocalFighterId}";
-                _p1AssistTxt.text = $"Trợ thủ: {OnlineRoomSession.Instance.LocalAssisterId}";
-                _p2FighterTxt.text = OnlineRoomSession.Instance.IsOpponentInRoom ? $"Tướng: {OnlineRoomSession.Instance.RemoteFighterId}" : "Đang chờ...";
-                _p2AssistTxt.text = OnlineRoomSession.Instance.IsOpponentInRoom ? $"Trợ thủ: {OnlineRoomSession.Instance.RemoteAssisterId}" : "";
-            }
-            else
-            {
-                _p1FighterTxt.text = $"Tướng: {OnlineRoomSession.Instance.RemoteFighterId}";
-                _p1AssistTxt.text = $"Trợ thủ: {OnlineRoomSession.Instance.RemoteAssisterId}";
-                _p2FighterTxt.text = $"Tướng: {OnlineRoomSession.Instance.LocalFighterId}";
-                _p2AssistTxt.text = $"Trợ thủ: {OnlineRoomSession.Instance.LocalAssisterId}";
-            }
-
-            _mapTxt.text = $"BẢN ĐỒ: {OnlineRoomSession.Instance.SelectedMapId}";
         }
 
         private void OnKeyDown(KeyboardEvent e)
         {
-            if (!_keypadPanel.visible) return;
+            if (!_keypadPanel.visible || e.type != KeyboardEvent.KEY_DOWN) return;
 
-            if (e.keyCode == 8)
+            if (e.keyCode == Keyboard.BACKSPACE)
             {
                 if (_inputBuffer.Length > 0)
                 {
@@ -331,7 +139,7 @@ namespace BVN.Game
                 return;
             }
 
-            if (e.keyCode == 13)
+            if (e.keyCode == Keyboard.ENTER)
             {
                 OnSubmitCode();
                 return;
@@ -340,9 +148,9 @@ namespace BVN.Game
             if (_inputBuffer.Length < 6)
             {
                 char c = (char)e.keyCode;
-                if ((c >= '0' && c <= '9') || (c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
+                if ((c >= '0' && c <= '9') || (c >= 'A' && c <= 'Z'))
                 {
-                    _inputBuffer += char.ToUpperInvariant(c);
+                    _inputBuffer += c;
                     UpdateInputDisplay();
                 }
             }
@@ -365,8 +173,7 @@ namespace BVN.Game
                 }
             }
 #endif
-
-            _statusTxt.text = "Dang ket noi va khoi tao ma phong...";
+            _statusTxt.text = L("txt.online.connecting_host");
             _menuPanel.visible = false;
             OnlineRoomSession.Instance.CreateRoom();
         }
@@ -383,27 +190,21 @@ namespace BVN.Game
         {
             if (_inputBuffer.Length != 6)
             {
-                _statusTxt.text = "Vui long nhap du 6 ky tu ma phong!";
+                _statusTxt.text = L("txt.online.code_6");
                 return;
             }
 
             _keypadPanel.visible = false;
-            _statusTxt.text = $"Dang ket noi toi phong {_inputBuffer}...";
+            _statusTxt.text = L("txt.online.connecting_join", new ASObject { ["code"] = _inputBuffer });
             OnlineRoomSession.Instance.JoinRoom(_inputBuffer);
-        }
-
-        private void OnClickStart()
-        {
-            if (!OnlineRoomSession.Instance.IsHost) return;
-            OnlineRoomSession.Instance.StartMatch(OnlineRoomSession.Instance.SelectedMapId, 12345);
         }
 
         private void OnClickLeaveRoom()
         {
+            _select.Exit();
+            _select.visible = false;
             OnlineRoomSession.Instance.LeaveRoom();
-            _roomPanel.visible = false;
-            _menuPanel.visible = true;
-            _statusTxt.text = "Da roi phong. Chon 'TAO PHONG' hoac 'VAO PHONG'.";
+            ShowLobby(L("txt.online.left"));
         }
 
         private void OnClickBack()
@@ -412,16 +213,26 @@ namespace BVN.Game
             MainGame.stageCtrl.goStage(new MenuStage());
         }
 
-        private void HandleRoomCreated(string code)
+        private void ShowLobby(string status)
         {
+            _titleTxt.visible = _serverTxt.visible = _statusTxt.visible = true;
+            _keypadPanel.visible = false;
+            _menuPanel.visible = true;
+            _statusTxt.text = status;
+        }
+
+        private void ShowSelect()
+        {
+            _titleTxt.visible = _serverTxt.visible = _statusTxt.visible = false;
             _menuPanel.visible = false;
             _keypadPanel.visible = false;
-            _roomPanel.visible = true;
+            _select.visible = true;
+            _select.Enter();
+        }
 
-            _roomCodeTxt.text = $"MA PHONG: {code}";
-            _statusTxt.text = "Phong da tao! Gui ma nay cho doi thu de tham gia.";
-            _btnStartBattle.visible = false;
-
+        private void HandleRoomCreated(string code)
+        {
+            // the code is also written next to the build so local two-client tests can join automatically
             try
             {
                 var workDir = System.IO.Path.Combine(UnityEngine.Application.dataPath, "../../work");
@@ -429,69 +240,45 @@ namespace BVN.Game
                 System.IO.File.WriteAllText(System.IO.Path.Combine(workDir, "current_room.txt"), code);
             }
             catch (Exception) { }
-
-            _localFighterIdx = 0;
-            _localAssistIdx = 0;
-            _mapIdx = 0;
-            OnlineRoomSession.Instance.LocalFighterId = AvailableFighters[_localFighterIdx];
-            OnlineRoomSession.Instance.LocalAssisterId = AvailableAssists[_localAssistIdx];
-            OnlineRoomSession.Instance.SelectedMapId = AvailableMaps[_mapIdx];
-            UpdateRosterDisplay();
+            ShowSelect();
         }
 
         private void HandleRoomJoined(string code)
         {
-            _menuPanel.visible = false;
-            _keypadPanel.visible = false;
-            _roomPanel.visible = true;
-
-            _roomCodeTxt.text = $"PHONG: {code}";
-            _statusTxt.text = "Da vao phong! Dang cho Host bat dau tran dau...";
-            _btnStartBattle.visible = false;
-
-            _localFighterIdx = 1;
-            _localAssistIdx = 0;
-            OnlineRoomSession.Instance.LocalFighterId = AvailableFighters[_localFighterIdx];
-            OnlineRoomSession.Instance.LocalAssisterId = AvailableAssists[_localAssistIdx];
-            OnlineRoomSession.Instance.SendSelectSync(OnlineRoomSession.Instance.LocalFighterId, OnlineRoomSession.Instance.LocalAssisterId);
-            UpdateRosterDisplay();
+            ShowSelect();
         }
 
         private void HandleRoomError(string error)
         {
-            _statusTxt.text = $"LOI: {error}";
-            _roomPanel.visible = false;
-            _keypadPanel.visible = false;
-            _menuPanel.visible = true;
+            if (_select.visible)
+            {
+                _select.Exit();
+                _select.visible = false;
+            }
+            ShowLobby(L("txt.online.error", new ASObject { ["error"] = error }));
         }
 
         private void HandleOpponentJoined()
         {
-            _statusTxt.text = "Doi thu da ket noi vao phong! San sang chien dau.";
-            if (OnlineRoomSession.Instance.IsHost)
-            {
-                _btnStartBattle.visible = true;
-                OnlineRoomSession.Instance.SendSelectSync(OnlineRoomSession.Instance.LocalFighterId, OnlineRoomSession.Instance.LocalAssisterId);
-            }
-            UpdateRosterDisplay();
+            _select.OnOpponentJoined();
         }
 
         private void HandleOpponentLeft()
         {
-            _statusTxt.text = "Doi thu da roi phong!";
-            _btnStartBattle.visible = false;
-            UpdateRosterDisplay();
+            OnlineRoomSession.Instance.RemoteStep = 0;
+            _select.OnOpponentJoined(); // refresh: the opponent card shows "waiting for player"
         }
 
         private void HandleMatchStart()
         {
+            var s = OnlineRoomSession.Instance;
             GameMode.currentMode = GameMode.SINGLE_VS_PEOPLE;
-            GameData.I.selectMap = OnlineRoomSession.Instance.SelectedMapId;
+            GameData.I.selectMap = s.SelectedMapId;
 
-            string p1Fighter = OnlineRoomSession.Instance.IsHost ? OnlineRoomSession.Instance.LocalFighterId : OnlineRoomSession.Instance.RemoteFighterId;
-            string p1Assist = OnlineRoomSession.Instance.IsHost ? OnlineRoomSession.Instance.LocalAssisterId : OnlineRoomSession.Instance.RemoteAssisterId;
-            string p2Fighter = OnlineRoomSession.Instance.IsHost ? OnlineRoomSession.Instance.RemoteFighterId : OnlineRoomSession.Instance.LocalFighterId;
-            string p2Assist = OnlineRoomSession.Instance.IsHost ? OnlineRoomSession.Instance.RemoteAssisterId : OnlineRoomSession.Instance.LocalAssisterId;
+            string p1Fighter = s.IsHost ? s.LocalFighterId : s.RemoteFighterId;
+            string p1Assist = s.IsHost ? s.LocalAssisterId : s.RemoteAssisterId;
+            string p2Fighter = s.IsHost ? s.RemoteFighterId : s.LocalFighterId;
+            string p2Assist = s.IsHost ? s.RemoteAssisterId : s.LocalAssisterId;
 
             GameData.I.p1Select = new SelectVO { fighter1 = p1Fighter, fuzhu = p1Assist };
             GameData.I.p2Select = new SelectVO { fighter1 = p2Fighter, fuzhu = p2Assist };
@@ -503,20 +290,18 @@ namespace BVN.Game
         private void OnRender()
         {
             OnlineRoomSession.Instance.Update();
-            if (_roomPanel != null && _roomPanel.visible)
-            {
-                UpdateRosterDisplay();
-            }
+            if (_select != null && _select.visible) _select.Tick();
         }
 
-        private static TextField CreateText(string text, double size, uint color, double x, double y, double w, double h)
+        private static TextField CreateText(string text, double size, uint color, double x, double y, double w, double h, bool bold = false)
         {
             return new TextField
             {
                 text = text,
                 fontSize = size,
                 textColor = color,
-                autoSize = TextFieldAutoSize.CENTER,
+                bold = bold,
+                align = TextFormatAlign.CENTER,
                 x = x,
                 y = y,
                 _w = w,
@@ -526,29 +311,20 @@ namespace BVN.Game
 
         private static Sprite CreateButton(string label, double x, double y, double w, double h, int color, Action onClick)
         {
-            var btn = new Sprite
-            {
-                x = x,
-                y = y,
-                buttonMode = true
-            };
-
-            var bg = new Box(w, h, color);
-            btn.addChild(bg);
-
-            var tf = new TextField
+            var btn = new Sprite { x = x, y = y, buttonMode = true };
+            btn.addChild(new Box(w, h, color));
+            btn.addChild(new TextField
             {
                 text = label,
                 fontSize = 14,
+                bold = true,
                 textColor = 0xFFFFFF,
-                autoSize = TextFieldAutoSize.CENTER,
+                align = TextFormatAlign.CENTER,
                 x = 0,
                 y = (h - 20) / 2,
                 _w = w,
                 _h = h
-            };
-            btn.addChild(tf);
-
+            });
             btn.addEventListener<MouseEvent>(MouseEvent.CLICK, e => onClick?.Invoke());
             return btn;
         }
@@ -557,6 +333,7 @@ namespace BVN.Game
         {
             KeyBoarder.unlisten((Action<KeyboardEvent>)OnKeyDown);
             GameRender.remove((Action)OnRender);
+            _select?.Exit();
 
             OnlineRoomSession.Instance.OnRoomCreated -= HandleRoomCreated;
             OnlineRoomSession.Instance.OnRoomJoined -= HandleRoomJoined;

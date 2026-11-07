@@ -41,6 +41,42 @@
      "好！我决定了,我要走一条属于我自己的忍道,|朝着绝对不让自己后悔的道路一直大步的走下去！"
     ]
    }
+  },
+  "vi": {
+   "name": {
+    "naruto": "Uzumaki Naruto",
+    "naruto_oneTail": "Uzumaki Naruto (Một đuôi)",
+    "naruto_fourTail": "Uzumaki Naruto (Bốn đuôi)",
+    "naruto_sennin": "Uzumaki Naruto (Tiên nhân)",
+    "naruto_kyubi": "Uzumaki Naruto (Cửu Vĩ)"
+   },
+   "says": {
+    "naruto": [
+     "Chỉ cần trở thành ninja giỏi nhất được cả làng công nhận,|cậu có thể giành lấy danh hiệu Hokage!",
+     "Tôi tuyệt đối không bỏ cuộc, vì đó chính là nhẫn đạo của tôi!",
+     "Được! Tôi quyết rồi, tôi sẽ đi trên nhẫn đạo của riêng mình,|sải bước mãi trên con đường mà tôi không bao giờ phải hối hận!"
+    ],
+    "naruto_oneTail": [
+     "Chỉ cần trở thành ninja giỏi nhất được cả làng công nhận,|cậu có thể giành lấy danh hiệu Hokage!",
+     "Tôi tuyệt đối không bỏ cuộc, vì đó chính là nhẫn đạo của tôi!",
+     "Được! Tôi quyết rồi, tôi sẽ đi trên nhẫn đạo của riêng mình,|sải bước mãi trên con đường mà tôi không bao giờ phải hối hận!"
+    ],
+    "naruto_fourTail": [
+     "Chỉ cần trở thành ninja giỏi nhất được cả làng công nhận,|cậu có thể giành lấy danh hiệu Hokage!",
+     "Tôi tuyệt đối không bỏ cuộc, vì đó chính là nhẫn đạo của tôi!",
+     "Được! Tôi quyết rồi, tôi sẽ đi trên nhẫn đạo của riêng mình,|sải bước mãi trên con đường mà tôi không bao giờ phải hối hận!"
+    ],
+    "naruto_sennin": [
+     "Chỉ cần trở thành ninja giỏi nhất được cả làng công nhận,|cậu có thể giành lấy danh hiệu Hokage!",
+     "Tôi tuyệt đối không bỏ cuộc, vì đó chính là nhẫn đạo của tôi!",
+     "Được! Tôi quyết rồi, tôi sẽ đi trên nhẫn đạo của riêng mình,|sải bước mãi trên con đường mà tôi không bao giờ phải hối hận!"
+    ],
+    "naruto_kyubi": [
+     "Chỉ cần trở thành ninja giỏi nhất được cả làng công nhận,|cậu có thể giành lấy danh hiệu Hokage!",
+     "Tôi tuyệt đối không bỏ cuộc, vì đó chính là nhẫn đạo của tôi!",
+     "Được! Tôi quyết rồi, tôi sẽ đi trên nhẫn đạo của riêng mình,|sải bước mãi trên con đường mà tôi không bao giờ phải hối hận!"
+    ]
+   }
   }
  },
  "variants": [

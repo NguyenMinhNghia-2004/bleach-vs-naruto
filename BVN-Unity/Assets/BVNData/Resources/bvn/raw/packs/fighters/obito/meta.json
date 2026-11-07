@@ -25,6 +25,26 @@
      "我谁也不是，也不想变成谁。。。。"
     ]
    }
+  },
+  "vi": {
+   "name": {
+    "obito": "Uchiha Obito",
+    "obito_majime": "Uchiha Obito (Bộ mặt thật)"
+   },
+   "says": {
+    "obito": [
+     "Kẻ không coi trọng đồng đội còn không bằng đồ bỏ đi!",
+     "Hiện thực càng tàn khốc, lỗ hổng trong lòng càng lớn.",
+     "Thế giới này chẳng còn hi vọng gì, hi vọng hay buông xuôi cũng chẳng khác nhau,|chỉ là một cái cớ cho qua mà thôi.",
+     "Ta chẳng là ai cả, cũng chẳng muốn trở thành ai..."
+    ],
+    "obito_majime": [
+     "Kẻ không coi trọng đồng đội còn không bằng đồ bỏ đi!",
+     "Hiện thực càng tàn khốc, lỗ hổng trong lòng càng lớn.",
+     "Thế giới này chẳng còn hi vọng gì, hi vọng hay buông xuôi cũng chẳng khác nhau,|chỉ là một cái cớ cho qua mà thôi.",
+     "Ta chẳng là ai cả, cũng chẳng muốn trở thành ai..."
+    ]
+   }
   }
  },
  "variants": [

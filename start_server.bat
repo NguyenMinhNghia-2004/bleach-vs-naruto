@@ -17,6 +17,7 @@ echo.
 echo May chu da duoc kich hoat!
 echo - Ban PC Client: Ket noi qua TCP cong 7777
 echo - Ban Web Browser: Ket noi qua WebSocket cong 7778
-echo - Public URL tu Cloudflare Tunnel dang hien thi tren cua so Cloudflare.
+echo - Public URL tu Cloudflare hien tren cua so Cloudflare (dang https://xxx.trycloudflare.com).
+echo - Gui ban be link: https://nguyenminhnghia-2004.github.io/bleach-vs-naruto-online/?server=xxx.trycloudflare.com
 echo.
 pause

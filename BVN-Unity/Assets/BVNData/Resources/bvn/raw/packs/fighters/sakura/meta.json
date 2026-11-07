@@ -16,6 +16,17 @@
      "我每次……都希望自己能够成为一个厉害的忍者……"
     ]
    }
+  },
+  "vi": {
+   "name": {
+    "sakura": "Haruno Sakura"
+   },
+   "says": {
+    "sakura": [
+     "Lần nào em cũng được người khác bảo vệ, thật không cam lòng... Vậy thì lần này... em phải tự mình bảo vệ những người em trân quý...",
+     "Lúc nào em... cũng mong mình trở thành một ninja thật giỏi..."
+    ]
+   }
   }
  },
  "variants": [

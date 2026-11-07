@@ -29,6 +29,30 @@
      "我是个复仇者，我是为复仇而生的，为了复仇我可以放弃一切。"
     ]
    }
+  },
+  "vi": {
+   "name": {
+    "sasuke": "Uchiha Sasuke",
+    "sasuke_juin": "Uchiha Sasuke (Ấn nguyền)",
+    "sasuke_susanoo": "Uchiha Sasuke (Susanoo)"
+   },
+   "says": {
+    "sasuke": [
+     "Quá nhiều ràng buộc chỉ khiến ta đánh mất chính mình.",
+     "Cô độc không phải thứ có thể so với nỗi buồn khi bị cha mẹ trách mắng.",
+     "Ta là kẻ báo thù, ta sinh ra để báo thù, vì báo thù ta có thể từ bỏ tất cả."
+    ],
+    "sasuke_juin": [
+     "Quá nhiều ràng buộc chỉ khiến ta đánh mất chính mình.",
+     "Cô độc không phải thứ có thể so với nỗi buồn khi bị cha mẹ trách mắng.",
+     "Ta là kẻ báo thù, ta sinh ra để báo thù, vì báo thù ta có thể từ bỏ tất cả."
+    ],
+    "sasuke_susanoo": [
+     "Quá nhiều ràng buộc chỉ khiến ta đánh mất chính mình.",
+     "Cô độc không phải thứ có thể so với nỗi buồn khi bị cha mẹ trách mắng.",
+     "Ta là kẻ báo thù, ta sinh ra để báo thù, vì báo thù ta có thể từ bỏ tất cả."
+    ]
+   }
   }
  },
  "variants": [

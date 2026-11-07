@@ -23,6 +23,24 @@
      "我要证明就算不会用体术或幻术也能成为一个了不起的忍者！"
     ]
    }
+  },
+  "vi": {
+   "name": {
+    "lee": "Rock Lee",
+    "lee_tomon": "Rock Lee (Đỗ Môn)"
+   },
+   "says": {
+    "lee": [
+     "Ta chính là con mãnh thú xanh tươi đẹp đẽ của làng Lá — Rock Lee!",
+     "Giờ chính là lúc ta thực hiện nhẫn đạo của mình!",
+     "Ta sẽ chứng minh dù không dùng được nhẫn thuật hay ảo thuật, ta vẫn có thể thành một ninja xuất sắc!"
+    ],
+    "lee_tomon": [
+     "Ta chính là con mãnh thú xanh tươi đẹp đẽ của làng Lá — Rock Lee!",
+     "Giờ chính là lúc ta thực hiện nhẫn đạo của mình!",
+     "Ta sẽ chứng minh dù không dùng được nhẫn thuật hay ảo thuật, ta vẫn có thể thành một ninja xuất sắc!"
+    ]
+   }
   }
  },
  "variants": [

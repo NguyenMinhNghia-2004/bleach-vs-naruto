@@ -17,6 +17,18 @@
      "真没办法……"
     ]
    }
+  },
+  "vi": {
+   "name": {
+    "gin": "Ichimaru Gin"
+   },
+   "says": {
+    "gin": [
+     "Ta chẳng còn gì để nói!",
+     "Xin lỗi, đội trưởng Aizen.",
+     "Đành chịu thôi..."
+    ]
+   }
   }
  },
  "variants": [

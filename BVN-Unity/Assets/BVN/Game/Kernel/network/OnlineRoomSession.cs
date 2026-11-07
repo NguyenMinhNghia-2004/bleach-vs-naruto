@@ -11,6 +11,30 @@ namespace BVN.Game
 
         private readonly Queue<byte[]> _pendingSendQueue = new Queue<byte[]>();
 
+        /// <summary>Fallback relay host for the WebGL build when the page URL has no ?server= parameter.</summary>
+        public const string DefaultWebServer = "bvn-relay.example.com";
+
+        /// <summary>Parses "?server=host[:port]" (also "#server=") from a page URL.</summary>
+        public void ApplyServerFromUrl(string url)
+        {
+            if (string.IsNullOrEmpty(url)) return;
+            int q = url.IndexOfAny(new[] { '?', '#' });
+            if (q < 0) return;
+            foreach (var kv in url.Substring(q + 1).Split('&', '#', '?'))
+            {
+                int eq = kv.IndexOf('=');
+                if (eq <= 0 || kv.Substring(0, eq) != "server") continue;
+                string v = Uri.UnescapeDataString(kv.Substring(eq + 1)).Trim();
+                if (v.StartsWith("ws://")) { ServerHost = v; continue; } // plain ws for local tests
+                if (v.StartsWith("wss://")) v = v.Substring(6);
+                else if (v.StartsWith("https://")) v = v.Substring(8);
+                v = v.TrimEnd('/');
+                int colon = v.LastIndexOf(':');
+                if (colon > 0 && int.TryParse(v.Substring(colon + 1), out int port)) { ServerPort = port; v = v.Substring(0, colon); }
+                if (v.Length > 0) ServerHost = v;
+            }
+        }
+
         public INetworkTransport Transport { get; private set; }
         public string ServerHost { get; set; } = "127.0.0.1";
         public int ServerPort { get; set; } = 7777;
@@ -25,8 +49,8 @@ namespace BVN.Game
         public string LocalFighterId { get; set; } = "naruto";
         public string LocalAssisterId { get; set; } = "sakura";
         public string RemoteFighterId { get; set; } = "ichigo";
-        public string RemoteAssisterId { get; set; } = "rukia";
-        public string SelectedMapId { get; set; } = "woods";
+        public string RemoteAssisterId { get; set; } = "kon";
+        public string SelectedMapId { get; set; } = "KonohaMura";
         public int MatchRandomSeed { get; set; } = 12345;
 
         public event Action<string> OnRoomCreated;
@@ -41,8 +65,11 @@ namespace BVN.Game
         {
             LoadConfig();
 #if UNITY_WEBGL && !UNITY_EDITOR
-            ServerHost = "lenders-penguin-hardly-instruments.trycloudflare.com";
+            // WebGL: the relay address comes from the page URL (?server=host or ?server=host:port),
+            // so a new Cloudflare tunnel URL never needs a rebuild. Port defaults to 443 (wss).
+            ServerHost = DefaultWebServer;
             ServerPort = 443;
+            ApplyServerFromUrl(UnityEngine.Application.absoluteURL);
             Transport = new WebSocketNetworkTransport();
 #else
             Transport = new TcpNetworkTransport();
@@ -155,6 +182,26 @@ namespace BVN.Game
                 Type = OnlinePacketType.PlayerReady,
                 RoomCode = CurrentRoomCode,
                 IntValue = ready ? 1 : 0
+            });
+        }
+
+        /// <summary>Opponent's selection step: 0 fighter, 1 assist, 2 map (host), 3 ready.</summary>
+        public int RemoteStep { get; set; }
+        /// <summary>Map under the opponent's cursor (meaningful while the host picks the map).</summary>
+        public string RemoteMapId { get; set; } = "";
+        public event Action OnRemoteSelectChanged;
+
+        /// <summary>Broadcast the local selection state (cursor ids + step) so the opponent sees it live.</summary>
+        public void SendSelectState(string fighterId, string assistId, int step, string mapId)
+        {
+            LocalFighterId = fighterId;
+            LocalAssisterId = assistId;
+            SendPacket(new OnlinePacket
+            {
+                Type = OnlinePacketType.SelectSync,
+                RoomCode = CurrentRoomCode,
+                IntValue = step,
+                StringData = $"{fighterId}|{assistId}|{step}|{mapId}"
             });
         }
 
@@ -290,6 +337,12 @@ namespace BVN.Game
                         RemoteFighterId = parts[0];
                         RemoteAssisterId = parts[1];
                     }
+                    if (parts.Length >= 4)
+                    {
+                        RemoteStep = int.TryParse(parts[2], out var st) ? st : 0;
+                        RemoteMapId = parts[3];
+                    }
+                    OnRemoteSelectChanged?.Invoke();
                     break;
 
                 case OnlinePacketType.MatchStart:

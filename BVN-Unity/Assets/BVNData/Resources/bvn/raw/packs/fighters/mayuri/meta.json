@@ -17,6 +17,18 @@
      "药物每天8次，机器实验就每天5次吧，|而改造我也会尽量避免把你搞死。"
     ]
    }
+  },
+  "vi": {
+   "name": {
+    "mayuri": "Kurotsuchi Mayuri"
+   },
+   "says": {
+    "mayuri": [
+     "Ta hết hứng thú với ngươi rồi, tránh sang một bên.",
+     "Ôi chao ôi chao, phí của ta bao nhiêu thời gian.",
+     "Thuốc thì ngày 8 lần, thí nghiệm máy móc ngày 5 lần nhé,|còn cải tạo thì ta sẽ cố không làm ngươi chết."
+    ]
+   }
   }
  },
  "variants": [

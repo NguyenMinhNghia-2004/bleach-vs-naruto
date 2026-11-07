@@ -17,6 +17,18 @@
      "忍者指的是能忍耐的人"
     ]
    }
+  },
+  "vi": {
+   "name": {
+    "jiraiya": "Jiraiya"
+   },
+   "says": {
+    "jiraiya": [
+     "Khắp đông tây nam bắc, cả thiên hạ này không ai địch nổi Tam Nhẫn tóc trắng, sứ giả loài cóc!",
+     "Với ninja, sống thế nào không quan trọng, chết thế nào mới là điều quan trọng nhất.",
+     "Ninja là người biết nhẫn nại."
+    ]
+   }
   }
  },
  "variants": [

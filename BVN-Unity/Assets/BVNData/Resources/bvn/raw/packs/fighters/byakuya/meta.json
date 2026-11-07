@@ -23,6 +23,24 @@
      "像你这种人，死在我的卍解之下，还早了一千年。"
     ]
    }
+  },
+  "vi": {
+   "name": {
+    "byakuya": "Kuchiki Byakuya",
+    "byakuya_bankai": "Kuchiki Byakuya (Bankai)"
+   },
+   "says": {
+    "byakuya": [
+     "Thật chậm chạp. Ngay cả lúc ngã xuống cũng vậy.",
+     "Ồ... không ngờ một kẻ thường dân cũng hiểu được cảm giác của quý tộc.",
+     "Hạng như ngươi mà được chết dưới Bankai của ta thì còn sớm một nghìn năm."
+    ],
+    "byakuya_bankai": [
+     "Thật chậm chạp. Ngay cả lúc ngã xuống cũng vậy.",
+     "Ồ... không ngờ một kẻ thường dân cũng hiểu được cảm giác của quý tộc.",
+     "Hạng như ngươi mà được chết dưới Bankai của ta thì còn sớm một nghìn năm."
+    ]
+   }
   }
  },
  "variants": [

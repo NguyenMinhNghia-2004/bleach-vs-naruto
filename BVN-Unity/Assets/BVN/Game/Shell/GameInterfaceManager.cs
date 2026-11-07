@@ -69,7 +69,7 @@ namespace BVN.Game
 
         public virtual List<object> getGameMenu()
         {
-            var online = Item("ONLINE PLAY", "ONLINE PLAY");
+            var online = Item("ONLINE PLAY", GetLang("txt.online.title"));
             online["func"] = (Action)(() => MainGame.stageCtrl.goStage(new OnlineLobbyStage()));
             var exit = Item("EXIT", GetLang("txt.game_interface_manager.exit"));
             exit["func"] = (Action)(() => GameUI.confrim(GetLang("confirm.exit_game_title"), GetLang("confirm.exit_game"), (Action)Quit));

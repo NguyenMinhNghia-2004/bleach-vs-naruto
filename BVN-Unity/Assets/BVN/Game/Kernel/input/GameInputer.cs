@@ -118,6 +118,14 @@ namespace BVN.Game
 
         public static void render()
         {
+            // online lockstep advances input timing per simulated frame (OnlineLockstepSync.TryStep → stepFrame)
+            if (OnlineLockstepSync.Instance.IsRunning) return;
+            stepFrame();
+        }
+
+        /// <summary>Per-frame bookkeeping of just-down delays and listened keys.</summary>
+        public static void stepFrame()
+        {
             foreach (var i in new List<string>(_justDownDelayKeys.Keys))
             {
                 if (_justDownDelayKeys[i] > 0)

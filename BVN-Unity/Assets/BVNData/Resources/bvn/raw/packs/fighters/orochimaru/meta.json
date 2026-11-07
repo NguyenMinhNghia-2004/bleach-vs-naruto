@@ -17,6 +17,18 @@
      "肉体的生命太短暂,太无常"
     ]
    }
+  },
+  "vi": {
+   "name": {
+    "orochimaru": "Orochimaru"
+   },
+   "says": {
+    "orochimaru": [
+     "Hiệp ước chỉ là lớp nguỵ trang để đối thủ lơ là, từ giờ lịch sử sẽ được viết lại.",
+     "Thứ hữu hình sớm muộn sẽ huỷ diệt, chỉ thứ vô hình mới trường tồn!",
+     "Sinh mệnh thể xác thật quá ngắn ngủi, quá vô thường."
+    ]
+   }
   }
  },
  "variants": [

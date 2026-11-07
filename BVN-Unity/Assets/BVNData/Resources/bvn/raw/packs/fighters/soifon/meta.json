@@ -16,6 +16,17 @@
      "你的光芒就像是……轻柔地打在水塔的雷一般……断绝了我的生命之源。"
     ]
    }
+  },
+  "vi": {
+   "name": {
+    "soifon": "Soi Fon"
+   },
+   "says": {
+    "soifon": [
+     "Cái bóng của người như... những mũi kim độc vô định... khâu chặt con đường của tôi.",
+     "Ánh sáng của người như... tia sét nhẹ nhàng đánh xuống tháp nước... cắt đứt nguồn sống của tôi."
+    ]
+   }
   }
  },
  "variants": [

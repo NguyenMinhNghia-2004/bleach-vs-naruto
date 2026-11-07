@@ -11,6 +11,12 @@
     "random": "random"
    },
    "says": {}
+  },
+  "vi": {
+   "name": {
+    "random": "Ngẫu nhiên"
+   },
+   "says": {}
   }
  },
  "variants": [

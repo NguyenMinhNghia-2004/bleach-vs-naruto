@@ -53,6 +53,54 @@
      "你缺少的就是这个，这种露骨的本能！|所以你才比我弱啊，一护！"
     ]
    }
+  },
+  "vi": {
+   "name": {
+    "ichigo": "Kurosaki Ichigo",
+    "ichigo_bankai": "Kurosaki Ichigo (Bankai)",
+    "ichigo_vizored_half": "Kurosaki Ichigo (Nửa Hollow)",
+    "ichigo_vizored": "Kurosaki Ichigo (Hollow hoá)",
+    "ichigo_zero": "Kurosaki Ichigo (Zero)",
+    "ogihci": "Hollow Ichigo",
+    "ogihci_bankai": "Hollow Ichigo (Bankai)"
+   },
+   "says": {
+    "ichigo": [
+     "Chỉ chiến đấu thôi thì chẳng có ý nghĩa gì, chỉ sống sót thôi cũng vô nghĩa.",
+     "Tôi cũng không biết vì sao, nhưng mà sướng lắm!",
+     "Chính vì ta không nhìn thấy nên mới đáng sợ."
+    ],
+    "ichigo_bankai": [
+     "Chỉ chiến đấu thôi thì chẳng có ý nghĩa gì, chỉ sống sót thôi cũng vô nghĩa.",
+     "Tôi cũng không biết vì sao, nhưng mà sướng lắm!",
+     "Chính vì ta không nhìn thấy nên mới đáng sợ."
+    ],
+    "ichigo_vizored_half": [
+     "Ichigo, vua và chiến mã khác nhau ở đâu?|Đừng bảo ta là khác ở hai chân với bốn chân đấy!",
+     "Câu trả lời chỉ có một, đó là bản năng!|Bản năng giết chóc trần trụi, khắc sâu vào tận cội nguồn của vạn vật!",
+     "Thứ ngươi thiếu chính là cái bản năng trần trụi đó!|Vì thế ngươi mới yếu hơn ta, Ichigo!"
+    ],
+    "ichigo_vizored": [
+     "Chỉ chiến đấu thôi thì chẳng có ý nghĩa gì, chỉ sống sót thôi cũng vô nghĩa.",
+     "Tôi cũng không biết vì sao, nhưng mà sướng lắm!",
+     "Chính vì ta không nhìn thấy nên mới đáng sợ."
+    ],
+    "ichigo_zero": [
+     "Chỉ chiến đấu thôi thì chẳng có ý nghĩa gì, chỉ sống sót thôi cũng vô nghĩa.",
+     "Tôi cũng không biết vì sao, nhưng mà sướng lắm!",
+     "Chính vì ta không nhìn thấy nên mới đáng sợ."
+    ],
+    "ogihci": [
+     "Ichigo, vua và chiến mã khác nhau ở đâu?|Đừng bảo ta là khác ở hai chân với bốn chân đấy!",
+     "Câu trả lời chỉ có một, đó là bản năng!|Bản năng giết chóc trần trụi, khắc sâu vào tận cội nguồn của vạn vật!",
+     "Thứ ngươi thiếu chính là cái bản năng trần trụi đó!|Vì thế ngươi mới yếu hơn ta, Ichigo!"
+    ],
+    "ogihci_bankai": [
+     "Ichigo, vua và chiến mã khác nhau ở đâu?|Đừng bảo ta là khác ở hai chân với bốn chân đấy!",
+     "Câu trả lời chỉ có một, đó là bản năng!|Bản năng giết chóc trần trụi, khắc sâu vào tận cội nguồn của vạn vật!",
+     "Thứ ngươi thiếu chính là cái bản năng trần trụi đó!|Vì thế ngươi mới yếu hơn ta, Ichigo!"
+    ]
+   }
   }
  },
  "variants": [

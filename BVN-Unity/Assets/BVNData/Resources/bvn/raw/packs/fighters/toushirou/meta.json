@@ -23,6 +23,24 @@
      "还差得远呢！"
     ]
    }
+  },
+  "vi": {
+   "name": {
+    "toushirou": "Hitsugaya Tōshirō",
+    "toushirou_bankai": "Hitsugaya Tōshirō (Bankai)"
+   },
+   "says": {
+    "toushirou": [
+     "Dưới nắng gắt, dấu chân in trên lớp băng mỏng tan biến không dấu vết.|Đừng sợ bị lừa dối, thế giới này vốn được dựng trên những ảo ảnh.",
+     "Đừng gọi ta là Tōshirō, là đội trưởng Hitsugaya!",
+     "Còn kém xa lắm!"
+    ],
+    "toushirou_bankai": [
+     "Dưới nắng gắt, dấu chân in trên lớp băng mỏng tan biến không dấu vết.|Đừng sợ bị lừa dối, thế giới này vốn được dựng trên những ảo ảnh.",
+     "Đừng gọi ta là Tōshirō, là đội trưởng Hitsugaya!",
+     "Còn kém xa lắm!"
+    ]
+   }
   }
  },
  "variants": [

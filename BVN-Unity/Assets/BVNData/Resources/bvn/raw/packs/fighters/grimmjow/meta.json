@@ -17,6 +17,18 @@
      "我不明白，我怎么会输给你这种货色！"
     ]
    }
+  },
+  "vi": {
+   "name": {
+    "grimmjow": "Grimmjow Jaegerjaquez"
+   },
+   "says": {
+    "grimmjow": [
+     "Không hiểu tình yêu, cũng chẳng hiểu ánh sáng... chỉ có huỷ diệt mới là bằng chứng của sự tồn tại!",
+     "Ahahahaha... thế mới phải chứ, Tử thần, cuối cùng ngươi cũng đáng để ta giết.",
+     "Ta không hiểu nổi, sao ta lại thua một kẻ như ngươi!"
+    ]
+   }
   }
  },
  "variants": [

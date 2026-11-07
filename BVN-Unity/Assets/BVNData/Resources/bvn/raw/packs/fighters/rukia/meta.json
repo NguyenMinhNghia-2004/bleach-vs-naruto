@@ -21,6 +21,22 @@
      "人们之所以能怀抱希望，是因为他们看不见死亡。"
     ]
    }
+  },
+  "vi": {
+   "name": {
+    "rukia": "Kuchiki Rukia",
+    "rukia_shikai": "Kuchiki Rukia (Shikai)"
+   },
+   "says": {
+    "rukia": [
+     "Số phận là vòng luân hồi hay là con đường trải dài phía trước?|Nếu là luân hồi, ta có nên đập vỡ vòng luân hồi ấy?|Hay nên cam chịu mà thuận theo?",
+     "Con người còn ôm ấp hi vọng là vì họ không nhìn thấy cái chết."
+    ],
+    "rukia_shikai": [
+     "Số phận là vòng luân hồi hay là con đường trải dài phía trước?|Nếu là luân hồi, ta có nên đập vỡ vòng luân hồi ấy?|Hay nên cam chịu mà thuận theo?",
+     "Con người còn ôm ấp hi vọng là vì họ không nhìn thấy cái chết."
+    ]
+   }
   }
  },
  "variants": [

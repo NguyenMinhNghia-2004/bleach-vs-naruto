@@ -23,6 +23,24 @@
      "以现在的你是赢不了我的，你根本不明白什么是真正的强大！"
     ]
    }
+  },
+  "vi": {
+   "name": {
+    "kakashi": "Hatake Kakashi",
+    "kakashi_kamui": "Hatake Kakashi (Kamui)"
+   },
+   "says": {
+    "kakashi": [
+     "Ninja không được suy nghĩ theo lẽ thường!",
+     "Yên tâm đi, dù có chết ta cũng sẽ bảo vệ các em, ta tuyệt đối không để đồng đội bị giết.",
+     "Với ngươi bây giờ thì không thắng nổi ta đâu, ngươi chẳng hiểu sức mạnh thật sự là gì!"
+    ],
+    "kakashi_kamui": [
+     "Ninja không được suy nghĩ theo lẽ thường!",
+     "Yên tâm đi, dù có chết ta cũng sẽ bảo vệ các em, ta tuyệt đối không để đồng đội bị giết.",
+     "Với ngươi bây giờ thì không thắng nổi ta đâu, ngươi chẳng hiểu sức mạnh thật sự là gì!"
+    ]
+   }
   }
  },
  "variants": [

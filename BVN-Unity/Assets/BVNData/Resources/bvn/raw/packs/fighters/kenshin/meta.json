@@ -21,6 +21,22 @@
      "……"
     ]
    }
+  },
+  "vi": {
+   "name": {
+    "kenshin": "Himura Kenshin",
+    "kenshin_battousai": "Himura Kenshin (Battōsai)"
+   },
+   "says": {
+    "kenshin": [
+     "Kiếm là hung khí, kiếm thuật là kỹ năng giết người.|Dù che đậy bằng lời lẽ đẹp đẽ đến đâu, đó vẫn là sự thật.",
+     "..."
+    ],
+    "kenshin_battousai": [
+     "Kiếm là hung khí, kiếm thuật là kỹ năng giết người.|Dù che đậy bằng lời lẽ đẹp đẽ đến đâu, đó vẫn là sự thật.",
+     "..."
+    ]
+   }
   }
  },
  "variants": [

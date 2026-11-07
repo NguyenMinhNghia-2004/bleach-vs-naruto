@@ -16,6 +16,17 @@
      "哼！不堪一击！"
     ]
    }
+  },
+  "vi": {
+   "name": {
+    "temari": "Temari"
+   },
+   "says": {
+    "temari": [
+     "Đồ ngốc!",
+     "Hừ! Chẳng chịu nổi một đòn!"
+    ]
+   }
   }
  },
  "variants": [

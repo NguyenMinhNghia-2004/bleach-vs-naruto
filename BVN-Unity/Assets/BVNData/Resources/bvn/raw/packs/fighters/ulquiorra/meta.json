@@ -23,6 +23,24 @@
      "人类，真是到最后，也出人意料的生物。"
     ]
    }
+  },
+  "vi": {
+   "name": {
+    "ulquiorra": "Ulquiorra Cifer",
+    "ulquiorra_resurreccion": "Ulquiorra Cifer (Resurrección)"
+   },
+   "says": {
+    "ulquiorra": [
+     "Mặt trời đã bị chúng ta bắn hạ rồi.",
+     "Không có gì mà ta không nhìn thấy.",
+     "Con người, đến tận cuối cùng vẫn là sinh vật khó đoán."
+    ],
+    "ulquiorra_resurreccion": [
+     "Mặt trời đã bị chúng ta bắn hạ rồi.",
+     "Không có gì mà ta không nhìn thấy.",
+     "Con người, đến tận cuối cùng vẫn là sinh vật khó đoán."
+    ]
+   }
   }
  },
  "variants": [

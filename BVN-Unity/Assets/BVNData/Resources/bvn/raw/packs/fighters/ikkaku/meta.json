@@ -17,6 +17,18 @@
      "结束总是在开始之前就已经存在了。"
     ]
    }
+  },
+  "vi": {
+   "name": {
+    "ikkaku": "Madarame Ikkaku"
+   },
+   "says": {
+    "ikkaku": [
+     "Mỗi người chúng ta, ngay từ lúc chào đời đã bước dần về cái chết.",
+     "Kẻ không thể vượt qua cái chết thì phải học cách thấu hiểu một vài điều.",
+     "Kết thúc luôn tồn tại từ trước cả khi bắt đầu."
+    ]
+   }
   }
  },
  "variants": [

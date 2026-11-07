@@ -44,7 +44,7 @@ namespace BVN.Flash
             Stage = new Stage { stageWidth = width, stageHeight = height, frameRate = fps };
             FlashScripting.PlayFrameSound ??= SoundSystem.PlayTimelineSound;
             if (TextField.DefaultFont == null)
-                TextField.DefaultFont = Font.CreateDynamicFontFromOSFont(new[] { "Microsoft YaHei", "Microsoft JhengHei", "Meiryo", "Malgun Gothic", "Segoe UI", "Arial Unicode MS", "SimHei", "Arial" }, 16);
+                TextField.DefaultFont = Font.CreateDynamicFontFromOSFont(new[] { "Segoe UI", "Microsoft YaHei", "Microsoft JhengHei", "Meiryo", "Malgun Gothic", "Arial Unicode MS", "SimHei", "Arial" }, 16);
 
             var shader = Resources.Load<Shader>("BVN/FlashSprite") ?? Shader.Find("BVN/FlashSprite");
             Renderer = new FlashRenderer(shader);

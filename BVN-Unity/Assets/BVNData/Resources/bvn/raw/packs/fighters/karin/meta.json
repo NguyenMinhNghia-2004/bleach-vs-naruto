@@ -17,6 +17,18 @@
      "佐助，你在哪里？等等我……"
     ]
    }
+  },
+  "vi": {
+   "name": {
+    "karin": "Uzumaki Karin"
+   },
+   "says": {
+    "karin": [
+     "Sasuke, em muốn được ở riêng với Sasuke...",
+     "Thật muốn được nhìn lại gương mặt anh ấy lúc đó.",
+     "Sasuke, anh ở đâu? Đợi em với..."
+    ]
+   }
   }
  },
  "variants": [

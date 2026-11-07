@@ -17,6 +17,18 @@
      "哟！你这笨蛋，你这混蛋！哟！……"
     ]
    }
+  },
+  "vi": {
+   "name": {
+    "killerbee": "Killer Bee"
+   },
+   "says": {
+    "killerbee": [
+     "Đồ ngốc nhà ngươi, đồ khốn nhà ngươi!",
+     "Yo! Bổn đại gia là mạnh nhất! Yo!",
+     "Yo! Đồ ngốc nhà ngươi, đồ khốn nhà ngươi! Yo!..."
+    ]
+   }
   }
  },
  "variants": [

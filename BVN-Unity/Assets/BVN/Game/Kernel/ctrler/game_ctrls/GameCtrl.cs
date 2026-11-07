@@ -708,17 +708,16 @@ namespace BVN.Game
 
             if (_isPauseGame) return;
 
+            if (OnlineLockstepSync.Instance.IsRunning)
+            {
+                // online: simulate a frame only once both players' inputs for it have arrived
+                OnlineRoomSession.Instance.Update();
+                if (!OnlineLockstepSync.Instance.TryStep()) return;
+            }
+
             EffectCtrl.I.render();
             gameState.render();
             if (!_isRenderGame) return;
-
-            if (OnlineLockstepSync.Instance.IsRunning)
-            {
-                OnlineRoomSession.Instance.Update();
-                ushort localBits = OnlineLockstepSync.Instance.SampleLocalInput();
-                int currentFrame = OnlineLockstepSync.Instance.CurrentFrame;
-                OnlineLockstepSync.Instance.AdvanceFrame(currentFrame, localBits);
-            }
 
             checkRenderAnimate();
 

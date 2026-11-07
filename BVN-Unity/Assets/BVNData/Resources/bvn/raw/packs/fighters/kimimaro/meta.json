@@ -17,6 +17,18 @@
      "也许的确是这样…我的身体病魔缠身，不能坚持很久…但是，我不会灭亡…而且我不是一个人…作为担当起大蛇丸大人一部分野心的人…我将在大蛇丸大人的心中永存…"
     ]
    }
+  },
+  "vi": {
+   "name": {
+    "kimimaro": "Kimimaro"
+   },
+   "says": {
+    "kimimaro": [
+     "Được thôi, muốn chết kiểu nào đây?",
+     "Con người sinh ra vì một mục đích nào đó. Ta tin chắc rằng sống là để làm tròn một sứ mệnh quan trọng.",
+     "Có lẽ đúng vậy... thân ta bệnh tật, chẳng trụ được bao lâu... Nhưng ta sẽ không diệt vong... ta không đơn độc... Là người gánh một phần tham vọng của ngài Orochimaru... ta sẽ sống mãi trong lòng ngài."
+    ]
+   }
   }
  },
  "variants": [

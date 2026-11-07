@@ -17,6 +17,18 @@
      "每舍弃自尊一次，我们就越像是野兽。|每扼杀一颗心，我们就远离野兽一步。"
     ]
    }
+  },
+  "vi": {
+   "name": {
+    "kenpachi": "Zaraki Kenpachi"
+   },
+   "says": {
+    "kenpachi": [
+     "Tới đây, chém giết nào!",
+     "Không sợ chết là để được đùa giỡn với cái chết.",
+     "Mỗi lần vứt bỏ lòng tự trọng, ta lại giống dã thú hơn.|Mỗi lần bóp nghẹt một trái tim, ta lại cách xa dã thú thêm một bước."
+    ]
+   }
   }
  },
  "variants": [
