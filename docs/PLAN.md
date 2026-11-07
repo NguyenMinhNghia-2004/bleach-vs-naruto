@@ -1,7 +1,7 @@
 # Kế hoạch chuyển Bleach vs Naruto sang Unity 6
 
 ## Mục tiêu
-Dựng lại BVN trên **Unity 6 (6000.3.14f1)**, dùng **toàn bộ tài nguyên từ source gốc** (XFL), chuyển **tự động** bằng công cụ, rồi tự kiểm tra từng giai đoạn để đạt bản hoàn thiện.
+Dựng lại BVN trên **Unity 6 (6000.3.10f1)**, dùng **toàn bộ tài nguyên từ source gốc** (XFL), chuyển **tự động** bằng công cụ, rồi tự kiểm tra từng giai đoạn để đạt bản hoàn thiện.
 
 ## Nguồn
 | Thư mục | Nội dung | Vai trò |

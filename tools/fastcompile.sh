@@ -3,7 +3,7 @@
 # Builds BVN.Runtime then BVN.Game (Assets/BVN/Game) against it.
 # Usage: tools/fastcompile.sh [runtime|game|all] [grep-filter]
 #   prints compiler errors (optionally only lines matching grep-filter); exit 0 when the selected assemblies are clean.
-E="/d/du lieu app/Unity Hub/6000.3.14f1/Editor/Data"
+E="/d/du lieu app/Unity Hub/6000.3.10f1/Editor/Data"
 ASSETS="/d/Na vs Ble/BVN-Unity/Assets/BVN"
 OUT="${FASTCOMPILE_OUT:-/d/Na vs Ble/work/fastcompile}"
 MODE="${1:-all}"

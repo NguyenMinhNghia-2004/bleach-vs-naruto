@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Build (optional) and run the Windows player with an AutoPilot script; prints the autopilot log.
 # Usage: tools/autotest.sh <outname> "<script>" [--build] [--timeout SEC]
-U="/d/du lieu app/Unity Hub/6000.3.14f1/Editor/Unity.exe"
+U="/d/du lieu app/Unity Hub/6000.3.10f1/Editor/Unity.exe"
 ROOT="/d/Na vs Ble"
 NAME="$1"; SCRIPT="$2"; shift 2
 BUILD=0; TO=180
