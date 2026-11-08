@@ -22,6 +22,10 @@ namespace BVN.Game
                 if (args[i] == "-bvnauto") script = args[i + 1];
                 if (args[i] == "-bvnout") outDir = args[i + 1];
             }
+#if UNITY_WEBGL && !UNITY_EDITOR
+            // WebGL has no command line: ?bvnauto=<script> in the page URL (logs go to the browser console)
+            script ??= UrlParam(UnityEngine.Application.absoluteURL, "bvnauto");
+#endif
             if (script == null) return;
 
             UnityEngine.AudioListener.volume = 0f;
@@ -46,8 +50,24 @@ namespace BVN.Game
             }
         }
 
+        private static string UrlParam(string url, string name)
+        {
+            if (string.IsNullOrEmpty(url)) return null;
+            int q = url.IndexOf('?');
+            if (q < 0) return null;
+            foreach (var kv in url.Substring(q + 1).Split('&', '#'))
+            {
+                int eq = kv.IndexOf('=');
+                if (eq > 0 && kv.Substring(0, eq) == name) return Uri.UnescapeDataString(kv.Substring(eq + 1).Replace('+', ' '));
+            }
+            return null;
+        }
+
         private void Log(string s)
         {
+#if UNITY_WEBGL && !UNITY_EDITOR
+            UnityEngine.Debug.Log("[AP] " + s);
+#endif
             _log?.WriteLine($"[{UnityEngine.Time.realtimeSinceStartup:F1}s tick={Stage.TickCount}] {s}");
             _log?.Flush();
         }
@@ -95,6 +115,10 @@ namespace BVN.Game
                         break;
                     case "shot":
                         yield return new UnityEngine.WaitForEndOfFrame();
+#if UNITY_WEBGL && !UNITY_EDITOR
+                        Log("shot " + (parts.Length > 1 ? parts[1] : "shot") + " stage=" + DescribeStage());
+                        break;
+#endif
                         var path = Path.Combine(_out, (parts.Length > 1 ? parts[1] : "shot") + ".png");
                         var tex = UnityEngine.ScreenCapture.CaptureScreenshotAsTexture();
                         File.WriteAllBytes(path, UnityEngine.ImageConversion.EncodeToPNG(tex));

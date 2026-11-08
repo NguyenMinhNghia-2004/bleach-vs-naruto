@@ -43,6 +43,11 @@ namespace BVN.Flash
             Stage.ResetStatics();
             Stage = new Stage { stageWidth = width, stageHeight = height, frameRate = fps };
             FlashScripting.PlayFrameSound ??= SoundSystem.PlayTimelineSound;
+#if UNITY_WEBGL && !UNITY_EDITOR
+            // browsers expose no OS fonts to Unity; ship a font with full Vietnamese glyphs (SIL OFL)
+            if (TextField.DefaultFont == null)
+                TextField.DefaultFont = Resources.Load<Font>("BVN/Fonts/BeVietnamPro-Medium");
+#endif
             if (TextField.DefaultFont == null)
                 TextField.DefaultFont = Font.CreateDynamicFontFromOSFont(new[] { "Segoe UI", "Microsoft YaHei", "Microsoft JhengHei", "Meiryo", "Malgun Gothic", "Arial Unicode MS", "SimHei", "Arial" }, 16);
 

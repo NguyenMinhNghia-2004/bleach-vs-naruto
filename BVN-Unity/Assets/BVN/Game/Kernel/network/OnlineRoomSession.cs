@@ -12,7 +12,7 @@ namespace BVN.Game
         private readonly Queue<byte[]> _pendingSendQueue = new Queue<byte[]>();
 
         /// <summary>Fallback relay host for the WebGL build when the page URL has no ?server= parameter.</summary>
-        public const string DefaultWebServer = "bvn-relay.example.com";
+        public const string DefaultWebServer = "";
 
         /// <summary>Parses "?server=host[:port]" (also "#server=") from a page URL.</summary>
         public void ApplyServerFromUrl(string url)
@@ -127,6 +127,11 @@ namespace BVN.Game
 
         public void ConnectToServer()
         {
+            if (string.IsNullOrWhiteSpace(ServerHost))
+            {
+                OnRoomError?.Invoke("Chưa có địa chỉ máy chủ relay (thêm ?server=xxx.trycloudflare.com vào link)");
+                return;
+            }
             if (!Transport.IsConnected)
             {
                 Transport.Connect(ServerHost, ServerPort);

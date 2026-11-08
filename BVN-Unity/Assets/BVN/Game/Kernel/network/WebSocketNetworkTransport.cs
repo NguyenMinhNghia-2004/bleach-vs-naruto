@@ -26,6 +26,7 @@ namespace BVN.Game
 #endif
 
         private bool _wasConnected;
+        private bool _connecting;
         private byte[] _packetBuffer = new byte[65536];
 
         public bool IsConnected
@@ -55,10 +56,12 @@ namespace BVN.Game
             }
             else
             {
-                url = $"wss://{host}";
+                // tunnels / https hosts use wss on 443; an explicit other port means a plain local relay (ws://host:7778)
+                url = port > 0 && port != 443 ? $"ws://{host}:{port}" : $"wss://{host}";
             }
 
 #if UNITY_WEBGL && !UNITY_EDITOR
+            _connecting = true;
             BVN_WS_Connect(url);
 #endif
         }
@@ -66,6 +69,7 @@ namespace BVN.Game
         public void Disconnect()
         {
 #if UNITY_WEBGL && !UNITY_EDITOR
+            _connecting = false;
             BVN_WS_Close();
 #endif
             if (_wasConnected)
@@ -96,11 +100,14 @@ namespace BVN.Game
                 _wasConnected = true;
                 OnConnected?.Invoke();
             }
-            else if (state == 2 && _wasConnected)
+            else if (state == 2 && (_wasConnected || _connecting))
             {
+                // also reports a connection that never opened (dead tunnel / wrong address)
                 _wasConnected = false;
+                _connecting = false;
                 OnDisconnected?.Invoke();
             }
+            if (state == 1) _connecting = false;
 
             int nextSize;
             while ((nextSize = BVN_WS_GetNextPacketSize()) > 0)

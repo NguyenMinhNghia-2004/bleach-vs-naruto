@@ -358,7 +358,7 @@ VI = {
 }
 
 # extra keys used by the Unity port (online lobby)
-ZH_ONLINE = {'title': '在线对战', 'server': '服务器：{host}', 'host': '创建房间', 'join': '加入房间', 'back': '返回', 'enter_code': '输入房间号（6位）：', 'connect': '连接', 'cancel': '取消', 'start': '开始对战', 'leave': '离开房间', 'room_code': '房间号：{code}', 'room': '房间：{code}', 'connecting_host': '正在连接并创建房间...', 'connecting_join': '正在连接房间 {code}...', 'code_6': '请输入完整的6位房间号！', 'created': '房间已创建！把房间号发给对手。', 'joined': '已加入房间！等待房主开始...', 'opponent_joined': '对手已加入！请选择角色。', 'opponent_left': '对手已离开房间。', 'left': '已离开房间。请选择创建房间或加入房间。', 'error': '错误：{error}', 'menu_hint': '请选择创建房间或加入房间。', 'step_fighter': '第1/3步 · 选择角色', 'step_assist': '第2/3步 · 选择辅助', 'step_map': '第3/3步 · 选择地图', 'step_ready': '已准备', 'wait_map': '房主正在选择地图...', 'wait_opponent': '等待对手选择...', 'select_hint': '←/→ (A/D) 切换 · J 确认 · K 返回上一步', 'you': '你', 'opponent': '对手', 'p1': '玩家1（房主）', 'p2': '玩家2（客人）', 'waiting_player': '等待玩家加入...', 'fighter': '角色', 'assist': '辅助', 'map': '地图', 'picking': '选择中...'}
+ZH_ONLINE = {'title': '在线对战', 'server': '服务器：{host}', 'host': '创建房间', 'join': '加入房间', 'back': '返回', 'enter_code': '输入房间号（6位）：', 'connect': '连接', 'cancel': '取消', 'start': '开始对战', 'leave': '离开房间', 'room_code': '房间号：{code}', 'room': '房间：{code}', 'connecting_host': '正在连接并创建房间...', 'connecting_join': '正在连接房间 {code}...', 'code_6': '请输入完整的6位房间号！', 'created': '房间已创建！把房间号发给对手。', 'joined': '已加入房间！等待房主开始...', 'opponent_joined': '对手已加入！请选择角色。', 'opponent_left': '对手已离开房间。', 'left': '已离开房间。请选择创建房间或加入房间。', 'error': '错误：{error}', 'menu_hint': '请选择创建房间或加入房间。', 'step_fighter': '第1/3步 · 选择角色', 'step_assist': '第2/3步 · 选择辅助', 'step_map': '第3/3步 · 选择地图', 'step_ready': '已准备', 'wait_map': '房主正在选择地图...', 'wait_opponent': '等待对手选择...', 'select_hint': 'A/D（或方向键）切换 · J 确认 · K 返回上一步', 'you': '你', 'opponent': '对手', 'p1': '玩家1（房主）', 'p2': '玩家2（客人）', 'waiting_player': '等待玩家加入...', 'fighter': '角色', 'assist': '辅助', 'map': '地图', 'picking': '选择中...'}
 
 EXTRA = {
     'txt.online.title': 'ĐẤU ONLINE',
@@ -389,7 +389,7 @@ EXTRA = {
     'txt.online.step_ready': 'ĐÃ SẴN SÀNG',
     'txt.online.wait_map': 'Chủ phòng đang chọn bản đồ...',
     'txt.online.wait_opponent': 'Chờ đối thủ chọn xong...',
-    'txt.online.select_hint': '←/→ (A/D) đổi lựa chọn · J xác nhận · K quay lại bước trước',
+    'txt.online.select_hint': 'A/D (hoặc phím mũi tên) đổi lựa chọn · J xác nhận · K quay lại bước trước',
     'txt.online.you': 'BẠN',
     'txt.online.opponent': 'ĐỐI THỦ',
     'txt.online.p1': 'NGƯỜI CHƠI 1 (CHỦ PHÒNG)',

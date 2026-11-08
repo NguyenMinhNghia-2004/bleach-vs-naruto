@@ -244,7 +244,7 @@
       "step_ready": "已准备",
       "wait_map": "房主正在选择地图...",
       "wait_opponent": "等待对手选择...",
-      "select_hint": "←/→ (A/D) 切换 · J 确认 · K 返回上一步",
+      "select_hint": "A/D（或方向键）切换 · J 确认 · K 返回上一步",
       "you": "你",
       "opponent": "对手",
       "p1": "玩家1（房主）",

@@ -244,7 +244,7 @@
       "step_ready": "ĐÃ SẴN SÀNG",
       "wait_map": "Chủ phòng đang chọn bản đồ...",
       "wait_opponent": "Chờ đối thủ chọn xong...",
-      "select_hint": "←/→ (A/D) đổi lựa chọn · J xác nhận · K quay lại bước trước",
+      "select_hint": "A/D (hoặc phím mũi tên) đổi lựa chọn · J xác nhận · K quay lại bước trước",
       "you": "BẠN",
       "opponent": "ĐỐI THỦ",
       "p1": "NGƯỜI CHƠI 1 (CHỦ PHÒNG)",

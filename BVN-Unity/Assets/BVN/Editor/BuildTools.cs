@@ -56,15 +56,21 @@ namespace BVN.EditorTools
             PlayerSettings.defaultWebScreenHeight = 600;
             PlayerSettings.runInBackground = true;
             PlayerSettings.WebGL.compressionFormat = WebGLCompressionFormat.Disabled;
+            PlayerSettings.stripEngineCode = false; // "Could not produce class with ID 115" when engine code is stripped
 
-            var outDir = Path.GetFullPath(Path.Combine(Application.dataPath, "../../Build/WebGL"));
+            // BVN_WEBGL_DEV=1 → development build with full managed stack traces (Build/WebGLDev)
+            bool dev = System.Environment.GetEnvironmentVariable("BVN_WEBGL_DEV") == "1";
+            // The ported AS3 code relies on catching NullReferenceException; with "explicitly thrown only"
+            // the release build spams NREs from engine bindings and never renders. Keep full support.
+            PlayerSettings.WebGL.exceptionSupport = WebGLExceptionSupport.FullWithStacktrace;
+            var outDir = Path.GetFullPath(Path.Combine(Application.dataPath, dev ? "../../Build/WebGLDev" : "../../Build/WebGL"));
             Directory.CreateDirectory(outDir);
             var opts = new BuildPlayerOptions
             {
                 scenes = new[] { ScenePath },
                 locationPathName = outDir,
                 target = BuildTarget.WebGL,
-                options = BuildOptions.None,
+                options = dev ? BuildOptions.Development : BuildOptions.None,
             };
             var report = BuildPipeline.BuildPlayer(opts);
             Debug.Log("[build webgl] result=" + report.summary.result + " size=" + report.summary.totalSize + " errors=" + report.summary.totalErrors);
